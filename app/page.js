@@ -92,7 +92,10 @@ export default function Home() {
             <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
             <a href="#demo" className="text-gray-300 hover:text-white transition-colors">Demo</a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
-            <button className="btn-primary">Get Started Free</button>
+            <a href="/login" className="text-gray-300 hover:text-white transition-colors">Login</a>
+            <a href="/login">
+              <button className="btn-primary">Get Started Free</button>
+            </a>
           </div>
         </div>
       </nav>
