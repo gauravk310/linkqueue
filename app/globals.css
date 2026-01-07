@@ -419,3 +419,24 @@ body {
   outline: 2px solid var(--purple-500);
   outline-offset: 2px;
 }
+
+/* Section Spacing - Prevent Collapsed Sections */
+section {
+  margin-bottom: 80px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Add breathing room to main containers */
+.max-w-7xl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 120px;
+  }
+}
