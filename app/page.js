@@ -121,8 +121,10 @@ export default function Home() {
                 One link for<br />
                 <span className="gradient-text">all your stuff</span>
               </h1>
-              <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
-                The ultimate platform for professionals to unite their digital presence. Elegant, powerful, and simpler than you can imagine.
+
+              <p className="text-2xl text-gray-600 leading-relaxed max-w-xl">
+                Share everything you create, sell, or say online with just one simple link.
+                It's like a homepage for your digital life! 🌈
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -134,11 +136,11 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="pt-12 flex items-center gap-6 border-t border-white/5">
-                <div className="flex -space-x-5">
-                  {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="w-14 h-14 rounded-full border-4 border-[#0f1420] bg-gray-700 overflow-hidden relative shadow-lg">
-                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 13}`} alt="User" />
+              <div className="flex items-center gap-4 pt-8">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4, 5].map(i => (
+                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gradient-to-br from-purple-200 to-pink-200">
+                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 7}`} alt="User" />
                     </div>
                   ))}
                 </div>
