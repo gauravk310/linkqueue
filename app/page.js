@@ -85,19 +85,19 @@ export default function Home() {
   return (
     <div className="gradient-bg min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0f1420]/80 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/70 border-b border-purple-200/30">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center font-black text-white shadow-lg shadow-purple-200">
               LQ
             </div>
-            <span className="text-2xl font-bold tracking-tight text-white/90">LinkQueue</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">LinkQueue</span>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#features" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Features</a>
-            <a href="#demo" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Demo</a>
-            <a href="#pricing" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Pricing</a>
-            <a href="/login" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Login</a>
+          <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
+            <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors">Features</a>
+            <a href="#how" className="text-gray-700 hover:text-purple-600 transition-colors">How it Works</a>
+            <a href="#pricing" className="text-gray-700 hover:text-purple-600 transition-colors">Pricing</a>
+            <a href="/login" className="text-gray-700 hover:text-purple-600 transition-colors">Login</a>
             <a href="/login">
               <button className="btn-primary">Start Free ✨</button>
             </a>
