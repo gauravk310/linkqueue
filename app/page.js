@@ -23,12 +23,11 @@ export default function Home() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on mount
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Demo data for the preview
   const demoLinks = [
     { id: 1, title: '👑 VIP Portfolio', url: 'portfolio.luxury.com', clicks: 1243, icon: '👑' },
     { id: 2, title: '💼 Business Inquiries', url: 'linkedin.com/in/johndoe', clicks: 892, icon: '💼' },
@@ -78,12 +77,12 @@ export default function Home() {
   ];
 
   return (
-    <div className="gradient-bg min-h-screen text-gray-200">
+    <div className="gradient-bg min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0f1420]/80 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-500 to-amber-700 flex items-center justify-center font-bold text-[#0f1420] shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center font-black text-white shadow-lg shadow-purple-200">
               LQ
             </div>
             <span className="text-2xl font-bold tracking-tight text-white/90">LinkQueue</span>
@@ -94,14 +93,14 @@ export default function Home() {
             <a href="#pricing" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Pricing</a>
             <a href="/login" className="text-gray-400 hover:text-[#fbbf24] transition-colors">Login</a>
             <a href="/login">
-              <button className="btn-primary py-2 px-6 !text-xs">Get Started</button>
+              <button className="btn-primary">Start Free ✨</button>
             </a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 md:pt-48 pb-32 px-6">
+      <section className="pt-40 pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-20 lg:gap-32 items-center">
             {/* Left Column - Text */}
@@ -117,12 +116,13 @@ export default function Home() {
               <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
                 The ultimate platform for professionals to unite their digital presence. Elegant, powerful, and simpler than you can imagine.
               </p>
-              <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                <button className="btn-primary text-lg px-10 py-5">
-                  Create Your Page
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="btn-primary text-lg">
+                  Get Started Free
                 </button>
-                <button className="btn-secondary text-lg px-10 py-5">
-                  View Examples
+                <button className="btn-secondary text-lg">
+                  See How It Works
                 </button>
               </div>
 
@@ -135,8 +135,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="text-sm">
-                  <p className="font-bold text-white text-lg">Trusted by Leaders</p>
-                  <p className="text-gray-500">Join the elite network</p>
+                  <p className="font-bold text-gray-800">Join the crew!</p>
+                  <p className="text-gray-600">50,000+ creators already here</p>
                 </div>
               </div>
             </div>
@@ -169,67 +169,73 @@ export default function Home() {
                       <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-xl shadow-inner group-hover:scale-110 transition-transform duration-300 border border-white/5">
                         {link.icon}
                       </div>
-                      <div className="flex-1 min-w-0 px-2">
-                        <div className="font-bold text-gray-100 text-lg group-hover:text-yellow-400 transition-colors">{link.title}</div>
-                        <div className="text-xs text-gray-500 truncate mt-1">{link.url}</div>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-bold text-gray-800 group-hover:text-purple-600 transition-colors">{link.title}</div>
+                        <div className="text-xs text-gray-500 truncate">{link.clicks} clicks this month</div>
                       </div>
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500 -translate-x-2 group-hover:translate-x-0 duration-300">
-                        ➔
+                      <div className="text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-1">
+                        →
                       </div>
                     </div>
                   ))}
                 </div>
+
+                <div className="mt-6 pt-6 border-t border-purple-100 text-center">
+                  <p className="text-sm text-gray-500">✨ linkqueue.com/sarah</p>
+                </div>
               </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="soft-card">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+              {stats.map((stat, idx) => (
+                <div key={idx} className="text-center reveal">
+                  <div className="text-5xl mb-3">{stat.emoji}</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
+                  <div className="text-gray-600 font-semibold">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-24 border-y border-white/5 bg-black/20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center reveal">
-                <div className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600 mb-4">{stat.value}</div>
-                <div className="text-yellow-500/60 text-sm font-bold tracking-widest uppercase">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="py-32 px-6 relative overflow-hidden">
+      {/* Features */}
+      <section id="features" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-24 reveal">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              Excellence in <span className="gradient-text">Every Detail</span>
+
+          <div className="text-center mb-20 reveal">
+            <h2 className="text-5xl md:text-6xl font-black mb-6">
+              Everything you need,<br />
+              <span className="gradient-text">nothing you don't</span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Crafted for those who demand perfection. LinkQueue offers a suite of tools designed to elevate your brand to the next level.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              We packed all the good stuff into one simple tool. No bloat, no confusion, just pure awesome.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="glass-card p-12 reveal hover:bg-white/[0.03] group"
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-800 to-black border border-white/10 flex items-center justify-center text-3xl mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  {feature.icon}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, idx) => (
+              <div key={idx} className="soft-card reveal group" style={{ transitionDelay: `${idx * 100}ms` }}>
+                <div className={`feature-icon bg-gradient-to-br ${feature.color} shadow-lg`}>
+                  <span className="text-4xl">{feature.icon}</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-100">{feature.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-base">{feature.description}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Gold CTA Section */}
+      {/* CTA */}
       <section className="py-32 px-6">
         <div className="max-w-6xl mx-auto reveal">
           <div className="relative rounded-[3rem] overflow-hidden p-16 md:p-32 text-center border border-yellow-500/20 shadow-2xl">
@@ -249,55 +255,58 @@ export default function Home() {
                 </button>
               </div>
             </div>
+            <p className="text-sm text-gray-500 mt-8">
+              No credit card • Free forever • Upgrade anytime
+            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-white/5 bg-[#0a0e17]">
+      <footer className="py-16 px-6 border-t border-purple-200">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-1 md:col-span-1">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 rounded bg-gradient-to-br from-yellow-500 to-amber-700 flex items-center justify-center font-bold text-[#0f1420] text-xs">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center font-black text-white">
                   LQ
                 </div>
-                <span className="text-xl font-bold text-white tracking-tight">LinkQueue</span>
+                <span className="text-xl font-bold gradient-text">LinkQueue</span>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                Defining the future of digital identity management.
+              <p className="text-gray-600 text-sm">
+                Making link sharing fun again, one link at a time ✨
               </p>
             </div>
             <div>
-              <h4 className="font-bold mb-5 text-gray-200">Platform</h4>
-              <div className="space-y-3 text-sm text-gray-500">
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Features</a>
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Integrations</a>
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Enterprise</a>
+              <h4 className="font-bold mb-4 text-gray-800">Product</h4>
+              <div className="space-y-2 text-sm text-gray-600">
+                <a href="#" className="block hover:text-purple-600 transition-colors">Features</a>
+                <a href="#" className="block hover:text-purple-600 transition-colors">Pricing</a>
+                <a href="#" className="block hover:text-purple-600 transition-colors">Templates</a>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-5 text-gray-200">Company</h4>
-              <div className="space-y-3 text-sm text-gray-500">
-                <a href="#" className="block hover:text-yellow-500 transition-colors">About Us</a>
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Careers</a>
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Press</a>
+              <h4 className="font-bold mb-4 text-gray-800">Company</h4>
+              <div className="space-y-2 text-sm text-gray-600">
+                <a href="#" className="block hover:text-purple-600 transition-colors">About</a>
+                <a href="#" className="block hover:text-purple-600 transition-colors">Blog</a>
+                <a href="#" className="block hover:text-purple-600 transition-colors">Contact</a>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-5 text-gray-200">Legal</h4>
-              <div className="space-y-3 text-sm text-gray-500">
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Privacy Policy</a>
-                <a href="#" className="block hover:text-yellow-500 transition-colors">Terms of Service</a>
+              <h4 className="font-bold mb-4 text-gray-800">Legal</h4>
+              <div className="space-y-2 text-sm text-gray-600">
+                <a href="#" className="block hover:text-purple-600 transition-colors">Privacy</a>
+                <a href="#" className="block hover:text-purple-600 transition-colors">Terms</a>
               </div>
             </div>
           </div>
-          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-            <div>© 2024 LinkQueue Inc. All rights reserved.</div>
+          <div className="pt-8 border-t border-purple-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+            <div>© 2024 LinkQueue. Made with 💜 by creators, for creators.</div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-gray-400">Twitter</a>
-              <a href="#" className="hover:text-gray-400">LinkedIn</a>
-              <a href="#" className="hover:text-gray-400">Instagram</a>
+              <a href="#" className="hover:text-purple-600 transition-colors">Twitter</a>
+              <a href="#" className="hover:text-purple-600 transition-colors">Instagram</a>
+              <a href="#" className="hover:text-purple-600 transition-colors">TikTok</a>
             </div>
           </div>
         </div>
