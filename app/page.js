@@ -76,10 +76,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: '50K+', label: 'Elite Members' },
-    { value: '2M+', label: 'Premium Links' },
-    { value: '99.9%', label: 'Uptime Guarantee' },
-    { value: '5.0★', label: 'Client Satisfaction' },
+    { value: '50K+', label: 'Happy Users', emoji: '✨' },
+    { value: '2M+', label: 'Links Shared', emoji: '🔗' },
+    { value: '99.9%', label: 'Uptime', emoji: '⚡' },
+    { value: '4.9★', label: 'Rating', emoji: '⭐' },
   ];
 
   return (
@@ -242,23 +242,22 @@ export default function Home() {
 
       {/* CTA */}
       <section className="py-32 px-6">
-        <div className="max-w-6xl mx-auto reveal">
-          <div className="relative rounded-[3rem] overflow-hidden p-16 md:p-32 text-center border border-yellow-500/20 shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/20 via-black to-black z-0"></div>
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 z-0 mix-blend-overlay"></div>
-
-            <div className="relative z-10">
-              <h2 className="text-5xl md:text-7xl font-bold mb-10 text-white tracking-tight">
-                Claim Your <span className="text-yellow-500">Access</span>
-              </h2>
-              <p className="text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-light leading-normal">
-                Experience the difference of a premium link-in-bio solution. Join the waitlist for exclusive benefits today.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <button className="btn-primary text-xl px-16 py-6 shadow-[0_0_40px_rgba(234,179,8,0.3)] hover:shadow-[0_0_60px_rgba(234,179,8,0.5)]">
-                  Get Started Now
-                </button>
-              </div>
+        <div className="max-w-4xl mx-auto reveal">
+          <div className="soft-card text-center p-16 bg-gradient-to-br from-purple-50 to-pink-50">
+            <div className="text-6xl mb-6">✨</div>
+            <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">
+              Ready to get started?
+            </h2>
+            <p className="text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+              Join thousands of creators who are already sharing smarter. It's free to start!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="btn-primary text-xl px-12 py-5">
+                Create Your Page ✨
+              </button>
+              <button className="btn-secondary text-xl px-12 py-5">
+                Watch Demo
+              </button>
             </div>
             <p className="text-sm text-gray-500 mt-8">
               No credit card • Free forever • Upgrade anytime
