@@ -29,11 +29,11 @@ export default function Home() {
   }, []);
 
   const demoLinks = [
-    { id: 1, title: '👑 VIP Portfolio', url: 'portfolio.luxury.com', clicks: 1243, icon: '👑' },
-    { id: 2, title: '💼 Business Inquiries', url: 'linkedin.com/in/johndoe', clicks: 892, icon: '💼' },
-    { id: 3, title: '🍸  Exclusive Events', url: 'events.com/vip', clicks: 654, icon: '🍸' },
-    { id: 4, title: '🏦 My Ventures', url: 'ventures.com', clicks: 423, icon: '🏦' },
-    { id: 5, title: '✒️ Monthly Newsletter', url: 'substack.com/luxury', clicks: 1087, icon: '✒️' },
+    { id: 1, title: '🎨 My Portfolio', url: 'behance.net/sarah', clicks: 432, icon: '🎨' },
+    { id: 2, title: '📸 Instagram', url: 'instagram.com/sarahdesigns', clicks: 892, icon: '📸' },
+    { id: 3, title: '🎵 Playlist', url: 'spotify.com/sarahvibes', clicks: 234, icon: '🎵' },
+    { id: 4, title: '🌟 Shop', url: 'shop.sarahdesigns.com', clicks: 567, icon: '🌟' },
+    { id: 5, title: '💌 Newsletter', url: 'sarahdesigns.substack.com', clicks: 189, icon: '💌' },
   ];
 
   const features = [
