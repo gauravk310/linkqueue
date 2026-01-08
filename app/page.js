@@ -38,14 +38,16 @@ export default function Home() {
 
   const features = [
     {
-      icon: '⚡',
-      title: 'Premium Performance',
-      description: 'Ultra-fast load times designed for high-conversion and seamless experiences.'
+      icon: '✨',
+      color: 'from-purple-200 to-purple-100',
+      title: 'Super Simple',
+      description: 'Create your page in minutes. No coding, no fuss, just drag and drop your way to awesome.'
     },
     {
-      icon: '🏛️',
-      title: 'Elegant Themes',
-      description: 'Sophisticated designs that convey trust, authority, and professionalism.'
+      icon: '🎨',
+      color: 'from-pink-200 to-pink-100',
+      title: 'Cute Themes',
+      description: 'Tons of adorable themes to match your vibe. Switch it up whenever you feel like it!'
     },
     {
       icon: '📈',
