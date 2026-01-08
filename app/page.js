@@ -101,81 +101,81 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-6">
+      <section className="pt-32 md:pt-48 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-20 lg:gap-32 items-center">
             {/* Left Column - Text */}
-            <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-bold tracking-wider uppercase">
+            <div className={`space-y-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-bold tracking-widest uppercase">
                 <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
                 The Gold Standard
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight">
                 Curate Your <br />
                 <span className="gradient-text">Digital Legacy</span>
               </h1>
-              <p className="text-lg text-gray-400 leading-relaxed max-w-lg">
+              <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
                 The ultimate platform for professionals to unite their digital presence. Elegant, powerful, and simpler than you can imagine.
               </p>
-              <div className="flex flex-col sm:flex-row gap-5">
-                <button className="btn-primary text-lg px-8 py-4">
+              <div className="flex flex-col sm:flex-row gap-6 pt-4">
+                <button className="btn-primary text-lg px-10 py-5">
                   Create Your Page
                 </button>
-                <button className="btn-secondary text-lg px-8 py-4">
+                <button className="btn-secondary text-lg px-10 py-5">
                   View Examples
                 </button>
               </div>
-              
-              <div className="pt-8 flex items-center gap-4">
-                 <div className="flex -space-x-4">
-                    {[1,2,3,4].map(i => (
-                        <div key={i} className="w-12 h-12 rounded-full border-2 border-[#0f1420] bg-gray-700 overflow-hidden relative">
-                             <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i*13}`} alt="User" />
-                        </div>
-                    ))}
-                 </div>
-                 <div className="text-sm">
-                    <p className="font-semibold text-white">Trusted by Leaders</p>
-                    <p className="text-gray-500">Join the elite network</p>
-                 </div>
+
+              <div className="pt-12 flex items-center gap-6 border-t border-white/5">
+                <div className="flex -space-x-5">
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="w-14 h-14 rounded-full border-4 border-[#0f1420] bg-gray-700 overflow-hidden relative shadow-lg">
+                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 13}`} alt="User" />
+                    </div>
+                  ))}
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold text-white text-lg">Trusted by Leaders</p>
+                  <p className="text-gray-500">Join the elite network</p>
+                </div>
               </div>
             </div>
 
             {/* Right Column - Demo Card */}
             <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="glass-card p-8 float max-w-md mx-auto relative border-t border-white/10">
-                 {/* Decorative top shimmer */}
-                 <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+              <div className="glass-card p-10 float max-w-md mx-auto relative border-t border-white/10 shadow-2xl">
+                {/* Decorative top shimmer */}
+                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
 
                 {/* Profile Header */}
-                <div className="text-center mb-10 relative z-10">
-                  <div className="w-28 h-28 mx-auto mb-6 rounded-full p-[2px] bg-gradient-to-tr from-yellow-600 via-amber-300 to-yellow-700">
+                <div className="text-center mb-12 relative z-10">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full p-[3px] bg-gradient-to-tr from-yellow-600 via-amber-300 to-yellow-700 shadow-xl">
                     <div className="w-full h-full rounded-full bg-[#1a202c] overflow-hidden">
-                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" className="w-full h-full object-cover" />
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" className="w-full h-full object-cover" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-1 text-white">Alexander Pierce</h3>
-                  <p className="text-yellow-500/80 text-sm font-medium tracking-wide">CEO & Founder</p>
+                  <h3 className="text-3xl font-bold mb-2 text-white">Alexander Pierce</h3>
+                  <p className="text-yellow-500/80 text-sm font-medium tracking-widest uppercase">CEO & Founder</p>
                 </div>
 
                 {/* Demo Links */}
-                <div className="space-y-4 relative z-10">
+                <div className="space-y-5 relative z-10">
                   {demoLinks.map((link, index) => (
                     <div
                       key={link.id}
-                      className="link-card group"
+                      className="link-card group py-4"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lg shadow-inner group-hover:scale-110 transition-transform duration-300">
-                          {link.icon}
+                      <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-xl shadow-inner group-hover:scale-110 transition-transform duration-300 border border-white/5">
+                        {link.icon}
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="font-semibold text-gray-200 group-hover:text-yellow-400 transition-colors">{link.title}</div>
-                        <div className="text-xs text-gray-500 truncate">{link.url}</div>
+                      <div className="flex-1 min-w-0 px-2">
+                        <div className="font-bold text-gray-100 text-lg group-hover:text-yellow-400 transition-colors">{link.title}</div>
+                        <div className="text-xs text-gray-500 truncate mt-1">{link.url}</div>
                       </div>
-                       <div className="opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500">
-                           ➔
-                       </div>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500 -translate-x-2 group-hover:translate-x-0 duration-300">
+                        ➔
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -186,13 +186,13 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 border-y border-white/5 bg-black/20">
+      <section className="py-24 border-y border-white/5 bg-black/20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
             {stats.map((stat, index) => (
               <div key={index} className="text-center reveal">
-                <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 mb-2">{stat.value}</div>
-                <div className="text-yellow-500/60 text-sm font-medium tracking-wider uppercase">{stat.label}</div>
+                <div className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600 mb-4">{stat.value}</div>
+                <div className="text-yellow-500/60 text-sm font-bold tracking-widest uppercase">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -200,58 +200,58 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 px-6 relative overflow-hidden">
+      <section id="features" className="py-32 px-6 relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20 reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-24 reveal">
+            <h2 className="text-5xl md:text-6xl font-bold mb-8">
               Excellence in <span className="gradient-text">Every Detail</span>
             </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Crafted for those who demand perfection. LinkQueue offers a suite of tools designed to elevate your brand.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Crafted for those who demand perfection. LinkQueue offers a suite of tools designed to elevate your brand to the next level.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="glass-card p-10 reveal hover:bg-white/[0.03]"
+                className="glass-card p-12 reveal hover:bg-white/[0.03] group"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-gray-800 to-black border border-white/10 flex items-center justify-center text-3xl mb-6 shadow-lg">
-                    {feature.icon}
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-800 to-black border border-white/10 flex items-center justify-center text-3xl mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-100">{feature.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-sm">{feature.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-100">{feature.title}</h3>
+                <p className="text-gray-400 leading-relaxed text-base">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-     {/* Gold CTA Section */}
-     <section className="py-24 px-6">
-         <div className="max-w-5xl mx-auto reveal">
-             <div className="relative rounded-3xl overflow-hidden p-12 md:p-20 text-center border border-yellow-500/20">
-                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/20 via-black to-black z-0"></div>
-                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 z-0 mix-blend-overlay"></div>
-                 
-                 <div className="relative z-10">
-                     <h2 className="text-4xl md:text-6xl font-bold mb-8 text-white">
-                         Claim Your <span className="text-yellow-500">Access</span>
-                     </h2>
-                     <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
-                         Experience the difference of a premium link-in-bio solution. Join the waitlist for exclusive benefits.
-                     </p>
-                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="btn-primary text-lg px-12 py-5 shadow-[0_0_30px_rgba(234,179,8,0.2)]">
-                            Get Started Now
-                        </button>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
+      {/* Gold CTA Section */}
+      <section className="py-32 px-6">
+        <div className="max-w-6xl mx-auto reveal">
+          <div className="relative rounded-[3rem] overflow-hidden p-16 md:p-32 text-center border border-yellow-500/20 shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/20 via-black to-black z-0"></div>
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 z-0 mix-blend-overlay"></div>
+
+            <div className="relative z-10">
+              <h2 className="text-5xl md:text-7xl font-bold mb-10 text-white tracking-tight">
+                Claim Your <span className="text-yellow-500">Access</span>
+              </h2>
+              <p className="text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-light leading-normal">
+                Experience the difference of a premium link-in-bio solution. Join the waitlist for exclusive benefits today.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <button className="btn-primary text-xl px-16 py-6 shadow-[0_0_40px_rgba(234,179,8,0.3)] hover:shadow-[0_0_60px_rgba(234,179,8,0.5)]">
+                  Get Started Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-white/5 bg-[#0a0e17]">
@@ -295,9 +295,9 @@ export default function Home() {
           <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
             <div>© 2024 LinkQueue Inc. All rights reserved.</div>
             <div className="flex gap-6">
-                <a href="#" className="hover:text-gray-400">Twitter</a>
-                <a href="#" className="hover:text-gray-400">LinkedIn</a>
-                <a href="#" className="hover:text-gray-400">Instagram</a>
+              <a href="#" className="hover:text-gray-400">Twitter</a>
+              <a href="#" className="hover:text-gray-400">LinkedIn</a>
+              <a href="#" className="hover:text-gray-400">Instagram</a>
             </div>
           </div>
         </div>
