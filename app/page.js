@@ -181,13 +181,13 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-6 bg-white border-y border-gray-200">
+      <section className="py-20 px-6 bg-white border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-20">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center reveal">
-                <div className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">{stat.label}</div>
+                <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">{stat.value}</div>
+                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -222,25 +222,25 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6">
-        <div className="max-w-4xl mx-auto reveal">
-          <div className="modern-card text-center bg-gradient-to-br from-blue-50 to-white border-blue-100">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+      <section className="py-28 px-6">
+        <div className="max-w-5xl mx-auto reveal">
+          <div className="modern-card text-center bg-gradient-to-br from-blue-50 via-white to-blue-50/30 border-blue-100 py-20 px-8">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight max-w-3xl mx-auto">
               Ready to get started?
             </h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
               Join thousands of creators. Free to start, no credit card required.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary text-lg px-10 py-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button className="btn-primary text-lg px-12 py-5 w-full sm:w-auto">
                 Create Your Page
               </button>
-              <button className="btn-secondary text-lg px-10 py-4">
+              <button className="btn-secondary text-lg px-12 py-5 w-full sm:w-auto">
                 View Demo
               </button>
             </div>
-            <p className="text-sm text-gray-500 mt-6">
-              Free forever • Instant setup • No credit card
+            <p className="text-sm font-medium text-gray-500 mt-8">
+              ✓ Free forever  •  ✓ Instant setup  •  ✓ No credit card
             </p>
           </div>
         </div>
