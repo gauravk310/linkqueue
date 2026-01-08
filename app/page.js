@@ -108,16 +108,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-40 pb-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-20 lg:gap-32 items-center">
-            {/* Left Column - Text */}
-            <div className={`space-y-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-bold tracking-widest uppercase">
-                <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
-                The Gold Standard
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+            {/* Left - Text */}
+            <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className="badge">
+                <span className="text-xl">✨</span>
+                Used by 50K+ creators
               </div>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight">
-                Curate Your <br />
-                <span className="gradient-text">Digital Legacy</span>
+
+              <h1 className="text-6xl lg:text-7xl font-black leading-[1.1]">
+                One link for<br />
+                <span className="gradient-text">all your stuff</span>
               </h1>
               <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
                 The ultimate platform for professionals to unite their digital presence. Elegant, powerful, and simpler than you can imagine.
