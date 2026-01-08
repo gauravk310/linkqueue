@@ -8,7 +8,6 @@ export default function Home() {
   useEffect(() => {
     setIsVisible(true);
 
-    // Scroll reveal animation
     const handleScroll = () => {
       const reveals = document.querySelectorAll('.reveal');
       reveals.forEach(element => {
@@ -29,164 +28,150 @@ export default function Home() {
   }, []);
 
   const demoLinks = [
-    { id: 1, title: '🎨 My Portfolio', url: 'behance.net/sarah', clicks: 432, icon: '🎨' },
-    { id: 2, title: '📸 Instagram', url: 'instagram.com/sarahdesigns', clicks: 892, icon: '📸' },
-    { id: 3, title: '🎵 Playlist', url: 'spotify.com/sarahvibes', clicks: 234, icon: '🎵' },
-    { id: 4, title: '🌟 Shop', url: 'shop.sarahdesigns.com', clicks: 567, icon: '🌟' },
-    { id: 5, title: '💌 Newsletter', url: 'sarahdesigns.substack.com', clicks: 189, icon: '💌' },
+    { id: 1, title: 'Portfolio', url: 'behance.net/alex', icon: '💼' },
+    { id: 2, title: 'Instagram', url: 'instagram.com/alex', icon: '📸' },
+    { id: 3, title: 'GitHub', url: 'github.com/alex', icon: '⚡' },
+    { id: 4, title: 'Shop', url: 'shop.alex.com', icon: '🛍️' },
   ];
 
   const features = [
     {
-      icon: '✨',
-      color: 'from-purple-200 to-purple-100',
-      title: 'Super Simple',
-      description: 'Create your page in minutes. No coding, no fuss, just drag and drop your way to awesome.'
+      icon: '⚡',
+      title: 'Fast & Simple',
+      description: 'Get your page up and running in minutes. Clean interface, zero complexity.'
     },
     {
       icon: '🎨',
-      color: 'from-pink-200 to-pink-100',
-      title: 'Cute Themes',
-      description: 'Tons of adorable themes to match your vibe. Switch it up whenever you feel like it!'
+      title: 'Beautiful Design',
+      description: 'Professional themes that make you look good. Minimalist and modern.'
     },
     {
       icon: '📊',
-      color: 'from-blue-200 to-blue-100',
-      title: 'See Your Stats',
-      description: 'Know what your audience loves. Simple analytics that actually make sense.'
+      title: 'Analytics',
+      description: 'Track your clicks and engagement with simple, clear insights.'
     },
     {
       icon: '📱',
-      color: 'from-purple-200 to-purple-100',
       title: 'QR Codes',
-      description: 'Get a cool QR code for every link. Perfect for business cards and IRL sharing!'
+      description: 'Auto-generated QR codes for every link. Perfect for offline sharing.'
     },
     {
-      icon: '⚡',
-      color: 'from-yellow-200 to-yellow-100',
-      title: 'Lightning Fast',
-      description: 'Your page loads super quick. Nobody likes waiting, and neither do we.'
+      icon: '🔒',
+      title: 'Reliable',
+      description: 'Your links work 24/7. We handle the tech so you can focus on content.'
     },
     {
-      icon: '🌈',
-      color: 'from-pink-200 to-blue-100',
-      title: 'Always Fresh',
-      description: 'New features dropping all the time. We listen to what you want and build it.'
+      icon: '✨',
+      title: 'Fresh Updates',
+      description: 'Regular improvements and new features based on user feedback.'
     },
   ];
 
   const stats = [
-    { value: '50K+', label: 'Happy Users', emoji: '✨' },
-    { value: '2M+', label: 'Links Shared', emoji: '🔗' },
-    { value: '99.9%', label: 'Uptime', emoji: '⚡' },
-    { value: '4.9★', label: 'Rating', emoji: '⭐' },
+    { value: '50K+', label: 'Active Users' },
+    { value: '2M+', label: 'Links Shared' },
+    { value: '99.9%', label: 'Uptime' },
+    { value: '4.9★', label: 'Rating' },
   ];
 
   return (
     <div className="gradient-bg min-h-screen">
+
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/70 border-b border-purple-200/30">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center font-black text-white shadow-lg shadow-purple-200">
+            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white">
               LQ
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">LinkQueue</span>
+            <span className="text-xl font-bold text-gray-900">LinkQueue</span>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors">Features</a>
-            <a href="#how" className="text-gray-700 hover:text-purple-600 transition-colors">How it Works</a>
-            <a href="#pricing" className="text-gray-700 hover:text-purple-600 transition-colors">Pricing</a>
-            <a href="/login" className="text-gray-700 hover:text-purple-600 transition-colors">Login</a>
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#features" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Features</a>
+            <a href="#pricing" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Pricing</a>
+            <a href="/login" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Login</a>
             <a href="/login">
-              <button className="btn-primary">Start Free ✨</button>
+              <button className="btn-primary text-sm">Get Started</button>
             </a>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-40 pb-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      {/* Hero */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-            {/* Left - Text */}
-            <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Left */}
+            <div className={`space-y-8 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
               <div className="badge">
-                <span className="text-xl">✨</span>
-                Used by 50K+ creators
+                Used by 50,000+ creators
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-black leading-[1.1]">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
                 One link for<br />
-                <span className="gradient-text">all your stuff</span>
+                <span className="accent-text">everything you do</span>
               </h1>
 
-              <p className="text-2xl text-gray-600 leading-relaxed max-w-xl">
-                Share everything you create, sell, or say online with just one simple link.
-                It's like a homepage for your digital life! 🌈
+              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                Share all your content with one simple link. Beautiful, fast, and easy to set up.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="btn-primary text-lg">
+                <button className="btn-primary text-base">
                   Get Started Free
                 </button>
-                <button className="btn-secondary text-lg">
-                  See How It Works
+                <button className="btn-secondary text-base">
+                  See Examples
                 </button>
               </div>
 
-              <div className="flex items-center gap-4 pt-8">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4, 5].map(i => (
-                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gradient-to-br from-purple-200 to-pink-200">
-                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 7}`} alt="User" />
+              <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
+                <div className="flex -space-x-2">
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 11}`} alt="" />
                     </div>
                   ))}
                 </div>
                 <div className="text-sm">
-                  <p className="font-bold text-gray-800">Join the crew!</p>
-                  <p className="text-gray-600">50,000+ creators already here</p>
+                  <p className="font-semibold text-gray-900">Join thousands of creators</p>
+                  <p className="text-gray-600">Already using LinkQueue</p>
                 </div>
               </div>
             </div>
 
-            {/* Right - Demo Card */}
-            <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-              <div className="soft-card float max-w-md mx-auto">
+            {/* Right - Demo */}
+            <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+              <div className="modern-card max-w-md mx-auto">
 
                 {/* Profile */}
-                <div className="text-center mb-8">
-                  <div className="w-28 h-28 mx-auto mb-4 rounded-full p-1 bg-gradient-to-tr from-purple-400 via-pink-400 to-blue-400 shadow-xl">
+                <div className="text-center mb-8 pb-6 border-b border-gray-100">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 p-1 shadow-lg">
                     <div className="w-full h-full rounded-full bg-white overflow-hidden">
-                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="Profile" className="w-full h-full object-cover" />
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Profile" />
                     </div>
                   </div>
-                  <h3 className="text-3xl font-bold mb-2 text-gray-800">Sarah ✨</h3>
-                  <p className="text-purple-600 font-semibold">Designer & Creator</p>
-                  <p className="text-sm text-gray-500 mt-2">✨ Sharing my creative journey</p>
+                  <h3 className="text-2xl font-bold mb-1 text-gray-900">Alex Johnson</h3>
+                  <p className="text-gray-600">Designer & Developer</p>
                 </div>
 
                 {/* Links */}
                 <div className="space-y-3">
-                  {demoLinks.map((link, idx) => (
-                    <div key={link.id} className="link-card group">
-                      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-2xl shadow-sm border-2 border-purple-200/50 group-hover:scale-110 transition-transform">
+                  {demoLinks.map((link) => (
+                    <div key={link.id} className="link-item group">
+                      <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-xl border border-gray-100 group-hover:bg-blue-50 group-hover:border-blue-200 transition-all">
                         {link.icon}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="font-bold text-gray-800 group-hover:text-purple-600 transition-colors">{link.title}</div>
-                        <div className="text-xs text-gray-500 truncate">{link.clicks} clicks this month</div>
+                        <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{link.title}</div>
+                        <div className="text-sm text-gray-500 truncate">{link.url}</div>
                       </div>
-                      <div className="text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-1">
+                      <div className="text-gray-400 group-hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-all">
                         →
                       </div>
                     </div>
                   ))}
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-purple-100 text-center">
-                  <p className="text-sm text-gray-500">✨ linkqueue.com/sarah</p>
                 </div>
               </div>
             </div>
@@ -196,43 +181,39 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 px-6">
+      <section className="py-16 px-6 bg-white border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
-          <div className="soft-card">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-              {stats.map((stat, idx) => (
-                <div key={idx} className="text-center reveal">
-                  <div className="text-5xl mb-3">{stat.emoji}</div>
-                  <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                  <div className="text-gray-600 font-semibold">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="text-center reveal">
+                <div className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
+                <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Features */}
       <section id="features" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
 
-          <div className="text-center mb-20 reveal">
-            <h2 className="text-5xl md:text-6xl font-black mb-6">
-              Everything you need,<br />
-              <span className="gradient-text">nothing you don't</span>
+          <div className="text-center mb-16 reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Everything you need
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We packed all the good stuff into one simple tool. No bloat, no confusion, just pure awesome.
+              Simple tools to share your content, track your audience, and grow your presence.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, idx) => (
-              <div key={idx} className="soft-card reveal group" style={{ transitionDelay: `${idx * 100}ms` }}>
-                <div className={`feature-icon bg-gradient-to-br ${feature.color} shadow-lg`}>
-                  <span className="text-4xl">{feature.icon}</span>
+              <div key={idx} className="modern-card reveal" style={{ transitionDelay: `${idx * 100}ms` }}>
+                <div className="icon-box">
+                  {feature.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">{feature.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
@@ -241,76 +222,75 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 px-6">
+      <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto reveal">
-          <div className="soft-card text-center p-16 bg-gradient-to-br from-purple-50 to-pink-50">
-            <div className="text-6xl mb-6">✨</div>
-            <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">
+          <div className="modern-card text-center bg-gradient-to-br from-blue-50 to-white border-blue-100">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Ready to get started?
             </h2>
-            <p className="text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
-              Join thousands of creators who are already sharing smarter. It's free to start!
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Join thousands of creators. Free to start, no credit card required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary text-xl px-12 py-5">
-                Create Your Page ✨
+              <button className="btn-primary text-lg px-10 py-4">
+                Create Your Page
               </button>
-              <button className="btn-secondary text-xl px-12 py-5">
-                Watch Demo
+              <button className="btn-secondary text-lg px-10 py-4">
+                View Demo
               </button>
             </div>
-            <p className="text-sm text-gray-500 mt-8">
-              No credit card • Free forever • Upgrade anytime
+            <p className="text-sm text-gray-500 mt-6">
+              Free forever • Instant setup • No credit card
             </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-purple-200">
-        <div className="max-w-7xl mx-auto">
+      <footer className="py-16 px-6 border-t border-gray-200 bg-white">
+        <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center font-black text-white">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white text-sm">
                   LQ
                 </div>
-                <span className="text-xl font-bold gradient-text">LinkQueue</span>
+                <span className="text-lg font-bold text-gray-900">LinkQueue</span>
               </div>
               <p className="text-gray-600 text-sm">
-                Making link sharing fun again, one link at a time ✨
+                Simple link sharing for creators.
               </p>
             </div>
             <div>
-              <h4 className="font-bold mb-4 text-gray-800">Product</h4>
+              <h4 className="font-semibold mb-3 text-gray-900">Product</h4>
               <div className="space-y-2 text-sm text-gray-600">
-                <a href="#" className="block hover:text-purple-600 transition-colors">Features</a>
-                <a href="#" className="block hover:text-purple-600 transition-colors">Pricing</a>
-                <a href="#" className="block hover:text-purple-600 transition-colors">Templates</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Features</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Templates</a>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-4 text-gray-800">Company</h4>
+              <h4 className="font-semibold mb-3 text-gray-900">Company</h4>
               <div className="space-y-2 text-sm text-gray-600">
-                <a href="#" className="block hover:text-purple-600 transition-colors">About</a>
-                <a href="#" className="block hover:text-purple-600 transition-colors">Blog</a>
-                <a href="#" className="block hover:text-purple-600 transition-colors">Contact</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">About</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Blog</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Contact</a>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-4 text-gray-800">Legal</h4>
+              <h4 className="font-semibold mb-3 text-gray-900">Legal</h4>
               <div className="space-y-2 text-sm text-gray-600">
-                <a href="#" className="block hover:text-purple-600 transition-colors">Privacy</a>
-                <a href="#" className="block hover:text-purple-600 transition-colors">Terms</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Privacy</a>
+                <a href="#" className="block hover:text-blue-600 transition-colors">Terms</a>
               </div>
             </div>
           </div>
-          <div className="pt-8 border-t border-purple-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-            <div>© 2024 LinkQueue. Made with 💜 by creators, for creators.</div>
+          <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+            <div>© 2024 LinkQueue. All rights reserved.</div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-purple-600 transition-colors">Twitter</a>
-              <a href="#" className="hover:text-purple-600 transition-colors">Instagram</a>
-              <a href="#" className="hover:text-purple-600 transition-colors">TikTok</a>
+              <a href="#" className="hover:text-blue-600 transition-colors">Twitter</a>
+              <a href="#" className="hover:text-blue-600 transition-colors">Instagram</a>
+              <a href="#" className="hover:text-blue-600 transition-colors">LinkedIn</a>
             </div>
           </div>
         </div>
