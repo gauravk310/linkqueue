@@ -157,15 +157,16 @@ export default function Home() {
                 {/* Decorative top shimmer */}
                 <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
 
-                {/* Profile Header */}
-                <div className="text-center mb-12 relative z-10">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full p-[3px] bg-gradient-to-tr from-yellow-600 via-amber-300 to-yellow-700 shadow-xl">
-                    <div className="w-full h-full rounded-full bg-[#1a202c] overflow-hidden">
-                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" className="w-full h-full object-cover" />
+                {/* Profile */}
+                <div className="text-center mb-8">
+                  <div className="w-28 h-28 mx-auto mb-4 rounded-full p-1 bg-gradient-to-tr from-purple-400 via-pink-400 to-blue-400 shadow-xl">
+                    <div className="w-full h-full rounded-full bg-white overflow-hidden">
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="Profile" className="w-full h-full object-cover" />
                     </div>
                   </div>
-                  <h3 className="text-3xl font-bold mb-2 text-white">Alexander Pierce</h3>
-                  <p className="text-yellow-500/80 text-sm font-medium tracking-widest uppercase">CEO & Founder</p>
+                  <h3 className="text-3xl font-bold mb-2 text-gray-800">Sarah ✨</h3>
+                  <p className="text-purple-600 font-semibold">Designer & Creator</p>
+                  <p className="text-sm text-gray-500 mt-2">✨ Sharing my creative journey</p>
                 </div>
 
                 {/* Demo Links */}
