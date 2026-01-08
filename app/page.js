@@ -151,11 +151,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column - Demo Card */}
-            <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="glass-card p-10 float max-w-md mx-auto relative border-t border-white/10 shadow-2xl">
-                {/* Decorative top shimmer */}
-                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+            {/* Right - Demo Card */}
+            <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+              <div className="soft-card float max-w-md mx-auto">
 
                 {/* Profile */}
                 <div className="text-center mb-8">
@@ -169,15 +167,11 @@ export default function Home() {
                   <p className="text-sm text-gray-500 mt-2">✨ Sharing my creative journey</p>
                 </div>
 
-                {/* Demo Links */}
-                <div className="space-y-5 relative z-10">
-                  {demoLinks.map((link, index) => (
-                    <div
-                      key={link.id}
-                      className="link-card group py-4"
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-xl shadow-inner group-hover:scale-110 transition-transform duration-300 border border-white/5">
+                {/* Links */}
+                <div className="space-y-3">
+                  {demoLinks.map((link, idx) => (
+                    <div key={link.id} className="link-card group">
+                      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-2xl shadow-sm border-2 border-purple-200/50 group-hover:scale-110 transition-transform">
                         {link.icon}
                       </div>
                       <div className="flex-1 min-w-0">
