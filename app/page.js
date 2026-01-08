@@ -50,24 +50,28 @@ export default function Home() {
       description: 'Tons of adorable themes to match your vibe. Switch it up whenever you feel like it!'
     },
     {
-      icon: '📈',
-      title: 'Executive Analytics',
-      description: 'Detailed insights into your audience demographics and engagement.'
+      icon: '📊',
+      color: 'from-blue-200 to-blue-100',
+      title: 'See Your Stats',
+      description: 'Know what your audience loves. Simple analytics that actually make sense.'
     },
     {
-      icon: '💎',
-      title: 'QR Integration',
-      description: 'Custom branded QR codes for your physical marketing materials.'
+      icon: '📱',
+      color: 'from-purple-200 to-purple-100',
+      title: 'QR Codes',
+      description: 'Get a cool QR code for every link. Perfect for business cards and IRL sharing!'
     },
     {
-      icon: '🔒',
-      title: 'Secure & Reliable',
-      description: 'Enterprise-grade security ensuring your links are always safe and up.'
+      icon: '⚡',
+      color: 'from-yellow-200 to-yellow-100',
+      title: 'Lightning Fast',
+      description: 'Your page loads super quick. Nobody likes waiting, and neither do we.'
     },
     {
-      icon: '🌙',
-      title: 'Midnight Mode',
-      description: 'A stunning dark interface that is easy on the eyes and looks incredible.'
+      icon: '🌈',
+      color: 'from-pink-200 to-blue-100',
+      title: 'Always Fresh',
+      description: 'New features dropping all the time. We listen to what you want and build it.'
     },
   ];
 
