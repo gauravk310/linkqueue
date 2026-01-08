@@ -79,95 +79,95 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white">
+            <div className="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white shadow-md">
               LQ
             </div>
             <span className="text-xl font-bold text-gray-900">LinkQueue</span>
           </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Features</a>
-            <a href="#pricing" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Pricing</a>
-            <a href="/login" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Login</a>
+          <div className="hidden md:flex items-center gap-10">
+            <a href="#features" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Features</a>
+            <a href="#pricing" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Pricing</a>
+            <a href="/login" className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Login</a>
             <a href="/login">
-              <button className="btn-primary text-sm">Get Started</button>
+              <button className="btn-primary text-sm px-6 py-2.5">Get Started</button>
             </a>
           </div>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="pt-40 pb-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-20 lg:gap-24 items-center">
 
             {/* Left */}
-            <div className={`space-y-8 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
-              <div className="badge">
-                Used by 50,000+ creators
+            <div className={`space-y-10 lg:pr-10 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
+              <div className="badge text-base">
+                ✨ Trusted by 50,000+ creators
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] text-gray-900 tracking-tight">
                 One link for<br />
-                <span className="accent-text">everything you do</span>
+                <span className="accent-text">everything</span>
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Share all your content with one simple link. Beautiful, fast, and easy to set up.
+              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-xl">
+                Share all your content with one simple link. Beautiful, fast, and ridiculously easy to set up.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="btn-primary text-base">
+              <div className="flex flex-col sm:flex-row gap-5 pt-4">
+                <button className="btn-primary text-lg px-10 py-5">
                   Get Started Free
                 </button>
-                <button className="btn-secondary text-base">
+                <button className="btn-secondary text-lg px-10 py-5">
                   See Examples
                 </button>
               </div>
 
-              <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+              <div className="flex items-center gap-6 pt-10 border-t border-gray-200">
+                <div className="flex -space-x-4">
+                  {[1, 2, 3, 4, 5].map(i => (
+                    <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-gray-200 overflow-hidden shadow-lg">
                       <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 11}`} alt="" />
                     </div>
                   ))}
                 </div>
-                <div className="text-sm">
-                  <p className="font-semibold text-gray-900">Join thousands of creators</p>
-                  <p className="text-gray-600">Already using LinkQueue</p>
+                <div>
+                  <p className="font-bold text-gray-900 text-base">50,000+ creators</p>
+                  <p className="text-gray-600 text-sm">Already sharing smarter</p>
                 </div>
               </div>
             </div>
 
             {/* Right - Demo */}
             <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-              <div className="modern-card max-w-md mx-auto">
+              <div className="modern-card max-w-xl mx-auto lg:mx-0">
 
                 {/* Profile */}
-                <div className="text-center mb-8 pb-6 border-b border-gray-100">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 p-1 shadow-lg">
-                    <div className="w-full h-full rounded-full bg-white overflow-hidden">
-                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Profile" />
+                <div className="text-center mb-12 pb-10 border-b border-gray-100">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 p-2 shadow-xl">
+                    <div className="w-full h-full rounded-full bg-white overflow-hidden p-2">
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Profile" className="w-full h-full" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-1 text-gray-900">Alex Johnson</h3>
-                  <p className="text-gray-600">Designer & Developer</p>
+                  <h3 className="text-3xl font-bold mb-3 text-gray-900">Alex Johnson</h3>
+                  <p className="text-gray-600 font-semibold text-lg">Designer & Developer</p>
                 </div>
 
                 {/* Links */}
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {demoLinks.map((link) => (
                     <div key={link.id} className="link-item group">
-                      <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-xl border border-gray-100 group-hover:bg-blue-50 group-hover:border-blue-200 transition-all">
+                      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-2xl border border-gray-100 group-hover:bg-blue-50 group-hover:border-blue-200 transition-all shadow-sm">
                         {link.icon}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{link.title}</div>
-                        <div className="text-sm text-gray-500 truncate">{link.url}</div>
+                        <div className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors text-lg">{link.title}</div>
+                        <div className="text-sm text-gray-500 truncate mt-0.5">{link.url}</div>
                       </div>
-                      <div className="text-gray-400 group-hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-all">
+                      <div className="text-gray-400 group-hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-all text-xl">
                         →
                       </div>
                     </div>
@@ -181,13 +181,13 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 px-6 bg-white border-y border-gray-200">
+      <section className="py-24 px-6 bg-white border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center reveal">
-                <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">{stat.value}</div>
-                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-6xl md:text-7xl font-bold text-gray-900 mb-4">{stat.value}</div>
+                <div className="text-sm font-bold text-gray-600 uppercase tracking-widest">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -195,26 +195,26 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section id="features" className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section id="features" className="py-32 px-6">
+        <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-16 reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          <div className="text-center mb-24 reveal max-w-4xl mx-auto">
+            <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight tracking-tight">
               Everything you need
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Simple tools to share your content, track your audience, and grow your presence.
+            <p className="text-2xl md:text-3xl text-gray-600 leading-relaxed">
+              Simple tools to share your content, understand your audience, and grow your presence.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {features.map((feature, idx) => (
               <div key={idx} className="modern-card reveal" style={{ transitionDelay: `${idx * 100}ms` }}>
                 <div className="icon-box">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-lg">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -222,72 +222,74 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 px-6">
+      <section className="py-32 px-6">
         <div className="max-w-5xl mx-auto reveal">
-          <div className="modern-card text-center bg-gradient-to-br from-blue-50 via-white to-blue-50/30 border-blue-100 py-20 px-8">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight max-w-3xl mx-auto">
-              Ready to get started?
+          <div className="modern-card text-center bg-gradient-to-br from-blue-50 via-white to-blue-50/20 border-blue-100 py-24 px-10">
+            <h2 className="text-6xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight max-w-4xl mx-auto">
+              Ready to start?
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Join thousands of creators. Free to start, no credit card required.
+            <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Join thousands of creators. Free forever, no credit card required.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="btn-primary text-lg px-12 py-5 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center max-w-2xl mx-auto">
+              <button className="btn-primary text-xl px-14 py-6 w-full sm:w-auto">
                 Create Your Page
               </button>
-              <button className="btn-secondary text-lg px-12 py-5 w-full sm:w-auto">
+              <button className="btn-secondary text-xl px-14 py-6 w-full sm:w-auto">
                 View Demo
               </button>
             </div>
-            <p className="text-sm font-medium text-gray-500 mt-8">
-              ✓ Free forever  •  ✓ Instant setup  •  ✓ No credit card
-            </p>
+            <div className="flex items-center justify-center gap-8 text-sm font-semibold text-gray-500 mt-10">
+              <span className="flex items-center gap-2">✓ Free forever</span>
+              <span className="flex items-center gap-2">✓ No credit card</span>
+              <span className="flex items-center gap-2">✓ 2 min setup</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-200 bg-white">
+      <footer className="py-20 px-6 border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+          <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white text-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white">
                   LQ
                 </div>
-                <span className="text-lg font-bold text-gray-900">LinkQueue</span>
+                <span className="text-xl font-bold text-gray-900">LinkQueue</span>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Simple link sharing for creators.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 text-gray-900">Product</h4>
-              <div className="space-y-2 text-sm text-gray-600">
+              <h4 className="font-bold mb-5 text-gray-900 text-lg">Product</h4>
+              <div className="space-y-3 text-base text-gray-600">
                 <a href="#" className="block hover:text-blue-600 transition-colors">Features</a>
                 <a href="#" className="block hover:text-blue-600 transition-colors">Pricing</a>
                 <a href="#" className="block hover:text-blue-600 transition-colors">Templates</a>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 text-gray-900">Company</h4>
-              <div className="space-y-2 text-sm text-gray-600">
+              <h4 className="font-bold mb-5 text-gray-900 text-lg">Company</h4>
+              <div className="space-y-3 text-base text-gray-600">
                 <a href="#" className="block hover:text-blue-600 transition-colors">About</a>
                 <a href="#" className="block hover:text-blue-600 transition-colors">Blog</a>
                 <a href="#" className="block hover:text-blue-600 transition-colors">Contact</a>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 text-gray-900">Legal</h4>
-              <div className="space-y-2 text-sm text-gray-600">
+              <h4 className="font-bold mb-5 text-gray-900 text-lg">Legal</h4>
+              <div className="space-y-3 text-base text-gray-600">
                 <a href="#" className="block hover:text-blue-600 transition-colors">Privacy</a>
                 <a href="#" className="block hover:text-blue-600 transition-colors">Terms</a>
               </div>
             </div>
           </div>
-          <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+          <div className="pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6 text-base text-gray-600">
             <div>© 2024 LinkQueue. All rights reserved.</div>
-            <div className="flex gap-6">
+            <div className="flex gap-8 font-semibold">
               <a href="#" className="hover:text-blue-600 transition-colors">Twitter</a>
               <a href="#" className="hover:text-blue-600 transition-colors">Instagram</a>
               <a href="#" className="hover:text-blue-600 transition-colors">LinkedIn</a>
