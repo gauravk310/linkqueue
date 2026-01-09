@@ -37,7 +37,7 @@ export default function DashboardPage() {
 
     return (
         <div className="gradient-bg min-h-screen">
-            {/* Navigation */}
+           
             <nav className="backdrop-blur-md bg-opacity-80 border-b border-gray-800">
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2">
