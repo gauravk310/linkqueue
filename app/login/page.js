@@ -214,7 +214,7 @@ export default function LoginPage() {
                         </button>
                     </form>
 
-                    {/* Social Login (Optional - can implement later) */}
+                    
                     <div className="mt-6">
                         <div className="relative">
                             <div className="absolute inset-0 flex items-center">
