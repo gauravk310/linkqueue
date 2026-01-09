@@ -102,7 +102,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1.1fr_1fr] gap-20 lg:gap-24 items-center">
 
-            {/* Left */}
+            
             <div className={`space-y-10 lg:pr-10 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
               <div className="badge text-base">
                 ✨ Trusted by 50,000+ creators
