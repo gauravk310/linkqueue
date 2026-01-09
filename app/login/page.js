@@ -95,7 +95,7 @@ export default function LoginPage() {
             </Link>
 
             <div className="w-full max-w-md">
-                {/* Logo */}
+                
                 <div className="text-center mb-8">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center font-bold text-white pulse-glow">
