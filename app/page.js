@@ -156,7 +156,7 @@ export default function Home() {
                   <p className="text-gray-600 font-semibold text-lg">Designer & Developer</p>
                 </div>
 
-                {/* Links */}
+ 
                 <div className="space-y-4">
                   {demoLinks.map((link) => (
                     <div key={link.id} className="link-item group">
