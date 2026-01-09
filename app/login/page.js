@@ -59,7 +59,7 @@ export default function LoginPage() {
                 if (!response.ok) {
                     setError(data.error || 'Something went wrong');
                 } else {
-                    // Auto-login after registration
+                    
                     const result = await signIn('credentials', {
                         redirect: false,
                         email: formData.email,
