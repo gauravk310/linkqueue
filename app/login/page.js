@@ -262,7 +262,7 @@ export default function LoginPage() {
                     </div>
                 </div>
 
-                {/* Trust Indicators */}
+               
                 <div className="mt-8 text-center text-sm text-gray-500">
                     <p>🔒 Secured with industry-standard encryption</p>
                 </div>
