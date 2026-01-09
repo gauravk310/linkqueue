@@ -140,7 +140,7 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* Empty State */}
+              
                 <div className="mt-12 glass-card p-12 text-center">
                     <div className="text-6xl mb-4">🚀</div>
                     <h3 className="text-2xl font-bold mb-3">Ready to Get Started?</h3>
