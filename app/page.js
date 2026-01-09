@@ -141,7 +141,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right - Demo */}
+         
             <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
               <div className="modern-card max-w-xl mx-auto lg:mx-0">
 
