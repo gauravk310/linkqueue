@@ -77,7 +77,7 @@ export default function Home() {
   return (
     <div className="gradient-bg min-h-screen">
 
-      {/* Navigation */}
+     
       <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
