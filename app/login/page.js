@@ -45,7 +45,7 @@ export default function LoginPage() {
                     router.refresh();
                 }
             } else {
-                // Register
+
                 const response = await fetch('/api/auth/register', {
                     method: 'POST',
                     headers: {
