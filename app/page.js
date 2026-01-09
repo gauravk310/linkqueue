@@ -145,7 +145,7 @@ export default function Home() {
             <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
               <div className="modern-card max-w-xl mx-auto lg:mx-0">
 
-                {/* Profile */}
+         
                 <div className="text-center mb-12 pb-10 border-b border-gray-100">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 p-2 shadow-xl">
                     <div className="w-full h-full rounded-full bg-white overflow-hidden p-2">
