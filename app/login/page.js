@@ -244,7 +244,7 @@ export default function LoginPage() {
                         </div>
                     </div>
 
-                    {/* Toggle Login/Register */}
+                   
                     <div className="mt-8 text-center">
                         <p className="text-gray-400">
                             {isLogin ? "Don't have an account? " : 'Already have an account? '}
