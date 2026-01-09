@@ -110,7 +110,7 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* Quick Actions */}
+              
                 <div className="glass-card p-8">
                     <h2 className="text-2xl font-bold mb-6">Quick Actions</h2>
                     <div className="grid md:grid-cols-2 gap-6">
