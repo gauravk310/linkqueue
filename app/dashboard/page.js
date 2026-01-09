@@ -71,7 +71,7 @@ export default function DashboardPage() {
                     </p>
                 </div>
 
-                {/* Stats Grid */}
+              
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                     <div className="glass-card p-6">
                         <div className="flex items-center gap-4">
