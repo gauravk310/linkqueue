@@ -221,7 +221,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+
       <section className="py-32 px-6">
         <div className="max-w-5xl mx-auto reveal">
           <div className="modern-card text-center bg-gradient-to-br from-blue-50 via-white to-blue-50/20 border-blue-100 py-24 px-10">
