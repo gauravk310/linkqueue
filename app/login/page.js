@@ -31,7 +31,7 @@ export default function LoginPage() {
 
         try {
             if (isLogin) {
-                // Login
+                
                 const result = await signIn('credentials', {
                     redirect: false,
                     email: formData.email,
