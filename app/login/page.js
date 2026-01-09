@@ -113,7 +113,7 @@ export default function LoginPage() {
                     </p>
                 </div>
 
-                {/* Login/Register Form */}
+                
                 <div className="glass-card p-8">
                     {error && (
                         <div className="mb-6 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
