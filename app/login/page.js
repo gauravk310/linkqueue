@@ -130,7 +130,9 @@ export default function LoginPage() {
                         </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
+                    {/* Form */}
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Name Field (Sign Up Only) */}
                         {!isLogin && (
                             <div>
                                 <label htmlFor="name" className="block text-sm font-semibold mb-2">
