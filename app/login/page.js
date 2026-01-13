@@ -99,18 +99,18 @@ export default function LoginPage() {
                 <span>Back to Home</span>
             </Link>
 
-            <div className="w-full max-w-md">
-                
-                <div className="text-center mb-8">
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center font-bold text-white pulse-glow">
+            <div className="w-full max-w-md relative z-10">
+                {/* Logo and Title Section */}
+                <div className="text-center mb-10">
+                    <div className="flex items-center justify-center mb-6">
+                        <div className="auth-logo">
                             LQ
                         </div>
                     </div>
-                    <h1 className="text-4xl font-black mb-2">
+                    <h1 className="auth-title mb-3">
                         {isLogin ? 'Welcome Back' : 'Join LinkQueue'}
                     </h1>
-                    <p className="text-gray-400">
+                    <p className="auth-subtitle">
                         {isLogin
                             ? 'Sign in to manage your links'
                             : 'Create your account and start sharing'
