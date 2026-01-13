@@ -229,16 +229,12 @@ export default function LoginPage() {
                         </button>
                     </form>
 
-                    
-                    <div className="mt-6">
-                        <div className="relative">
-                            <div className="absolute inset-0 flex items-center">
-                                <div className="w-full border-t border-gray-700"></div>
-                            </div>
-                            <div className="relative flex justify-center text-sm">
-                                <span className="px-4 bg-gray-900/50 text-gray-400">Or continue with</span>
-                            </div>
-                        </div>
+                    {/* Divider */}
+                    <div className="auth-divider">
+                        <div className="auth-divider-line"></div>
+                        <span className="auth-divider-text">Or</span>
+                        <div className="auth-divider-line"></div>
+                    </div>
 
                         <div className="mt-6 grid grid-cols-2 gap-4">
                             <button className="btn-secondary py-3 flex items-center justify-center gap-2">
