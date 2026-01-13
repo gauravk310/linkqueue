@@ -181,7 +181,7 @@ export default function LoginPage() {
                                 onChange={handleChange}
                                 required
                                 minLength={6}
-                                className="input-field w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                                className="auth-input"
                                 placeholder="••••••••"
                             />
                             {!isLogin && (
