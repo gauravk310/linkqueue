@@ -201,12 +201,13 @@ export default function LoginPage() {
                                     />
                                     <span className="text-sm" style={{ color: 'hsla(0, 0%, 100%, 0.7)' }}>Remember me</span>
                                 </label>
-                                <a href="#" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">
+                                <a href="#" className="auth-link text-sm">
                                     Forgot password?
                                 </a>
                             </div>
                         )}
 
+                        {/* Submit Button */}
                         <button
                             type="submit"
                             disabled={isLoading}
