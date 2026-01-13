@@ -197,9 +197,9 @@ export default function LoginPage() {
                                 <label className="flex items-center gap-3 cursor-pointer">
                                     <input
                                         type="checkbox"
-                                        className="w-4 h-4 rounded border-gray-700 bg-white/5 text-purple-500 focus:ring-purple-500 focus:ring-offset-0"
+                                        className="auth-checkbox"
                                     />
-                                    <span className="text-sm text-gray-400">Remember me</span>
+                                    <span className="text-sm" style={{ color: 'hsla(0, 0%, 100%, 0.7)' }}>Remember me</span>
                                 </label>
                                 <a href="#" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">
                                     Forgot password?
