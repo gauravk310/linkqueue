@@ -194,7 +194,7 @@ export default function LoginPage() {
                         {/* Remember Me & Forgot Password (Login Only) */}
                         {isLogin && (
                             <div className="flex items-center justify-between">
-                                <label className="flex items-center gap-2 cursor-pointer">
+                                <label className="flex items-center gap-3 cursor-pointer">
                                     <input
                                         type="checkbox"
                                         className="w-4 h-4 rounded border-gray-700 bg-white/5 text-purple-500 focus:ring-purple-500 focus:ring-offset-0"
