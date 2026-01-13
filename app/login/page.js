@@ -265,7 +265,7 @@ export default function LoginPage() {
                                     setError('');
                                     setFormData({ name: '', email: '', password: '' });
                                 }}
-                                className="text-purple-400 font-semibold hover:text-purple-300 transition-colors"
+                                className="auth-link"
                             >
                                 {isLogin ? 'Sign up' : 'Sign in'}
                             </button>
