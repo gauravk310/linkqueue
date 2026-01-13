@@ -91,9 +91,9 @@ export default function LoginPage() {
             {/* Back to Home Link */}
             <Link
                 href="/"
-                className="fixed top-8 left-8 flex items-center gap-2 text-gray-300 hover:text-white transition-colors z-50"
+                className="auth-back-link fixed top-8 left-8 z-50"
             >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
                 <span>Back to Home</span>
