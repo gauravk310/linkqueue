@@ -122,8 +122,11 @@ export default function LoginPage() {
                 <div className="glass-card p-8 md:p-10">
                     {/* Error Message */}
                     {error && (
-                        <div className="mb-6 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
-                            {error}
+                        <div className="auth-error mb-6">
+                            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>{error}</span>
                         </div>
                     )}
 
