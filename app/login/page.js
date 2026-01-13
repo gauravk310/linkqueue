@@ -118,8 +118,9 @@ export default function LoginPage() {
                     </p>
                 </div>
 
-                
-                <div className="glass-card p-8">
+                {/* Main Card */}
+                <div className="glass-card p-8 md:p-10">
+                    {/* Error Message */}
                     {error && (
                         <div className="mb-6 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
                             {error}
