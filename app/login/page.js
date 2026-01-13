@@ -168,8 +168,9 @@ export default function LoginPage() {
                             />
                         </div>
 
+                        {/* Password Field */}
                         <div>
-                            <label htmlFor="password" className="block text-sm font-semibold mb-2">
+                            <label htmlFor="password" className="auth-label">
                                 Password
                             </label>
                             <input
