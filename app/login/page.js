@@ -31,7 +31,7 @@ export default function LoginPage() {
 
         try {
             if (isLogin) {
-                
+
                 const result = await signIn('credentials', {
                     redirect: false,
                     email: formData.email,
@@ -59,7 +59,7 @@ export default function LoginPage() {
                 if (!response.ok) {
                     setError(data.error || 'Something went wrong');
                 } else {
-                    
+
                     const result = await signIn('credentials', {
                         redirect: false,
                         email: formData.email,
@@ -82,8 +82,13 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="gradient-bg min-h-screen flex items-center justify-center px-6 py-12">
-            
+        <div className="auth-gradient-bg min-h-screen flex items-center justify-center px-6 py-12">
+            {/* Animated Floating Orbs */}
+            <div className="auth-orb auth-orb-1"></div>
+            <div className="auth-orb auth-orb-2"></div>
+            <div className="auth-orb auth-orb-3"></div>
+
+            {/* Back to Home Link */}
             <Link
                 href="/"
                 className="fixed top-8 left-8 flex items-center gap-2 text-gray-300 hover:text-white transition-colors z-50"
