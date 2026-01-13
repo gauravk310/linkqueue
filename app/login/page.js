@@ -185,12 +185,13 @@ export default function LoginPage() {
                                 placeholder="••••••••"
                             />
                             {!isLogin && (
-                                <p className="mt-1 text-xs text-gray-500">
+                                <p className="auth-helper-text">
                                     Must be at least 6 characters long
                                 </p>
                             )}
                         </div>
 
+                        {/* Remember Me & Forgot Password (Login Only) */}
                         {isLogin && (
                             <div className="flex items-center justify-between">
                                 <label className="flex items-center gap-2 cursor-pointer">
