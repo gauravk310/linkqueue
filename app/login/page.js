@@ -153,7 +153,7 @@ export default function LoginPage() {
 
                         {/* Email Field */}
                         <div>
-                            <label htmlFor="email" className="block text-sm font-semibold mb-2">
+                            <label htmlFor="email" className="auth-label">
                                 Email Address
                             </label>
                             <input
