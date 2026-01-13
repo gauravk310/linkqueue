@@ -134,8 +134,8 @@ export default function LoginPage() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         {/* Name Field (Sign Up Only) */}
                         {!isLogin && (
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-semibold mb-2">
+                            <div className="fade-in">
+                                <label htmlFor="name" className="auth-label">
                                     Full Name
                                 </label>
                                 <input
