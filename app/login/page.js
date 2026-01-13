@@ -255,9 +255,9 @@ export default function LoginPage() {
                         </button>
                     </div>
 
-                   
+                    {/* Switch Login/Signup */}
                     <div className="mt-8 text-center">
-                        <p className="text-gray-400">
+                        <p style={{ color: 'hsla(0, 0%, 100%, 0.6)' }}>
                             {isLogin ? "Don't have an account? " : 'Already have an account? '}
                             <button
                                 onClick={() => {
