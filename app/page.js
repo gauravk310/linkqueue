@@ -146,10 +146,10 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5 pt-4">
-                <button className="btn-primary text-lg px-10 py-5">
+                <button className="text-lg px-10 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 active:scale-95 transition-all">
                   Get Started Free
                 </button>
-                <button className="btn-secondary text-lg px-10 py-5">
+                <button className="text-lg px-10 py-5 bg-white text-gray-900 font-bold rounded-xl border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 hover:scale-105 active:scale-95 transition-all shadow-lg">
                   See Examples
                 </button>
               </div>
@@ -157,8 +157,8 @@ export default function Home() {
               <div className="flex items-center gap-6 pt-10 border-t border-gray-200">
                 <div className="flex -space-x-4">
                   {[1, 2, 3, 4, 5].map(i => (
-                    <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-gray-200 overflow-hidden shadow-lg">
-                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 11}`} alt="" />
+                    <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-gradient-to-br from-blue-500 to-indigo-500 overflow-hidden shadow-lg">
+                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 11}`} alt="" className="w-full h-full" />
                     </div>
                   ))}
                 </div>
