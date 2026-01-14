@@ -126,20 +126,19 @@ export default function Home() {
         </div>
       </nav>
 
-   
+      {/* Hero Section */}
       <section className="pt-40 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-20 lg:gap-24 items-center">
-
-            
-            <div className={`space-y-10 lg:pr-10 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
-              <div className="badge text-base">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            {/* Left Content */}
+            <div className={`space-y-10 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm border border-blue-200">
                 ✨ Trusted by 50,000+ creators
               </div>
 
-              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] text-gray-900 tracking-tight">
+              <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight text-gray-900">
                 One link for<br />
-                <span className="accent-text">everything</span>
+                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">everything</span>
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-xl">
