@@ -122,17 +122,19 @@ export default function DashboardPage() {
               <p className="text-purple-200">Add a new link to your profile</p>
             </button>
 
-                        <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
-                            <div className="text-3xl mb-3">🎨</div>
-                            <h3 className="text-xl font-bold mb-2">Customize Theme</h3>
-                            <p className="text-gray-400">Choose from 50+ beautiful themes</p>
-                        </button>
+            {/* Customize Theme */}
+            <button className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-6 text-left hover:bg-white/10 hover:scale-105 hover:shadow-xl transition-all group">
+              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">🎨</div>
+              <h3 className="text-xl font-bold mb-2 text-white">Customize Theme</h3>
+              <p className="text-purple-200">Choose from 50+ beautiful themes</p>
+            </button>
 
-                        <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
-                            <div className="text-3xl mb-3">📱</div>
-                            <h3 className="text-xl font-bold mb-2">Get QR Code</h3>
-                            <p className="text-gray-400">Download your profile QR code</p>
-                        </button>
+            {/* Get QR Code */}
+            <button className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-6 text-left hover:bg-white/10 hover:scale-105 hover:shadow-xl transition-all group">
+              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">📱</div>
+              <h3 className="text-xl font-bold mb-2 text-white">Get QR Code</h3>
+              <p className="text-purple-200">Download your profile QR code</p>
+            </button>
 
                         <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
                             <div className="text-3xl mb-3">📊</div>
