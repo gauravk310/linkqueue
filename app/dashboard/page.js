@@ -87,44 +87,20 @@ export default function DashboardPage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">
                   0
                 </div>
+                <div className="text-purple-200 font-medium">Total Views</div>
+              </div>
+            </div>
+          </div>
 
-              
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    <div className="glass-card p-6">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-2xl">
-                                🔗
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold gradient-text">0</div>
-                                <div className="text-gray-400">Total Links</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="glass-card p-6">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-2xl">
-                                👁️
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold gradient-text">0</div>
-                                <div className="text-gray-400">Total Views</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="glass-card p-6">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center text-2xl">
-                                📊
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold gradient-text">0%</div>
-                                <div className="text-gray-400">Click Rate</div>
-                            </div>
-                        </div>
-                    </div>
+          {/* Click Rate */}
+          <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-6 hover:bg-white/15 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/30 to-pink-600/30 flex items-center justify-center text-3xl backdrop-blur-sm border border-pink-400/30">
+                📊
+              </div>
+              <div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-pink-300 to-rose-300 bg-clip-text text-transparent">
+                  0%
                 </div>
 
               
