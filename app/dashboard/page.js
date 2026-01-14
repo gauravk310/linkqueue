@@ -156,5 +156,7 @@ export default function DashboardPage() {
             Create Your First Link
           </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
