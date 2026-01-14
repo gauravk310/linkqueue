@@ -186,15 +186,15 @@ export default function Home() {
                 {/* Links */}
                 <div className="space-y-4">
                   {demoLinks.map((link) => (
-                    <div key={link.id} className="link-item group">
-                      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center text-2xl border border-gray-100 group-hover:bg-blue-50 group-hover:border-blue-200 transition-all shadow-sm">
+                    <div key={link.id} className="flex items-center gap-5 p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-blue-50 hover:border-blue-200 hover:shadow-lg hover:scale-105 transition-all cursor-pointer group">
+                      <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-2xl border border-gray-200 group-hover:border-blue-300 transition-all shadow-sm">
                         {link.icon}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors text-lg">{link.title}</div>
                         <div className="text-sm text-gray-500 truncate mt-0.5">{link.url}</div>
                       </div>
-                      <div className="text-gray-400 group-hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-all text-xl">
+                      <div className="text-gray-400 group-hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-all text-xl transform group-hover:translate-x-1">
                         →
                       </div>
                     </div>
@@ -202,12 +202,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
- 
+      {/* Stats Section */}
       <section className="py-24 px-6 bg-white border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
