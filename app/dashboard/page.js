@@ -1,19 +1,18 @@
 'use client';
 
-import { useSession, signOut } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-import Link from 'next/link';
+import { useState } from 'react';
 
 export default function DashboardPage() {
-    const { data: session, status } = useSession();
-    const router = useRouter();
+  const [session] = useState({
+    user: {
+      name: 'John Doe',
+      email: 'john@example.com'
+    }
+  });
 
-    useEffect(() => {
-        if (status === 'unauthenticated') {
-            router.push('/login');
-        }
-    }, [status, router]);
+  const handleSignOut = () => {
+    alert('Signing out...');
+  };
 
     if (status === 'loading') {
         return (
