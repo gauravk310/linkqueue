@@ -14,18 +14,21 @@ export default function DashboardPage() {
     alert('Signing out...');
   };
 
-    if (status === 'loading') {
-        return (
-            <div className="gradient-bg min-h-screen flex items-center justify-center">
-                <div className="glass-card p-8">
-                    <div className="flex items-center gap-3">
-                        <svg className="animate-spin h-8 w-8 text-purple-500" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                        </svg>
-                        <span className="text-xl font-semibold">Loading...</span>
-                    </div>
-                </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-violet-950 via-purple-900 to-fuchsia-900 relative overflow-hidden">
+      {/* Animated Background Effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-fuchsia-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}}></div>
+      </div>
+
+      {/* Navigation Bar */}
+      <nav className="relative z-10 backdrop-blur-xl bg-white/5 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <a href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-fuchsia-500 flex items-center justify-center font-bold text-white shadow-lg shadow-purple-500/50 group-hover:scale-110 transition-transform">
+              LQ
             </div>
         );
     }
