@@ -212,7 +212,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center reveal">
-                <div className="text-6xl md:text-7xl font-bold text-gray-900 mb-4">{stat.value}</div>
+                <div className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">{stat.value}</div>
                 <div className="text-sm font-bold text-gray-600 uppercase tracking-widest">{stat.label}</div>
               </div>
             ))}
@@ -220,12 +220,11 @@ export default function Home() {
         </div>
       </section>
 
-    
+      {/* Features Section */}
       <section id="features" className="py-32 px-6">
         <div className="max-w-7xl mx-auto">
-
           <div className="text-center mb-24 reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight tracking-tight">
+            <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight">
               Everything you need
             </h2>
             <p className="text-2xl md:text-3xl text-gray-600 leading-relaxed">
