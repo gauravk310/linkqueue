@@ -102,16 +102,25 @@ export default function DashboardPage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-pink-300 to-rose-300 bg-clip-text text-transparent">
                   0%
                 </div>
+                <div className="text-purple-200 font-medium">Click Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              
-                <div className="glass-card p-8">
-                    <h2 className="text-2xl font-bold mb-6">Quick Actions</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
-                            <div className="text-3xl mb-3">➕</div>
-                            <h3 className="text-xl font-bold mb-2">Create New Link</h3>
-                            <p className="text-gray-400">Add a new link to your profile</p>
-                        </button>
+        {/* Quick Actions */}
+        <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+            <span className="text-2xl">⚡</span>
+            Quick Actions
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Create New Link */}
+            <button className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-6 text-left hover:bg-white/10 hover:scale-105 hover:shadow-xl transition-all group">
+              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">➕</div>
+              <h3 className="text-xl font-bold mb-2 text-white">Create New Link</h3>
+              <p className="text-purple-200">Add a new link to your profile</p>
+            </button>
 
                         <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
                             <div className="text-3xl mb-3">🎨</div>
