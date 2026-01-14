@@ -75,7 +75,34 @@ export default function Home() {
   ];
 
   return (
-    <div className="gradient-bg min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      <style jsx>{`
+        .reveal {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        
+        .fade-in {
+          animation: fadeIn 1s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
 
      
       <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
