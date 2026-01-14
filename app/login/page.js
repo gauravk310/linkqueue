@@ -16,6 +16,52 @@ export default function LoginPage() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    setError('');
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setIsLoading(true);
+    
+    // Simulate API call
+    setTimeout(() => {
+      setIsLoading(false);
+      alert(isLogin ? 'Login successful!' : 'Account created!');
+    }, 1500);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-violet-950 via-purple-900 to-fuchsia-900 flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Animated Background Orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-fuchsia-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      {/* Back to Home Link */}
+      <a href="/" className="absolute top-6 left-6 text-white/80 hover:text-white transition-colors flex items-center gap-2 group">
+        <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+        Back to Home
+      </a>
+
+      {/* Main Container */}
+      <div className="relative w-full max-w-md z-10">
+        {/* Logo and Title */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-fuchsia-500 rounded-2xl mb-4 shadow-2xl shadow-purple-500/50 transform hover:scale-110 transition-transform">
+            <span className="text-2xl font-bold text-white">LQ</span>
+          </div>
+          <h1 className="text-4xl font-bold text-white mb-2">
+            {isLogin ? 'Welcome Back' : 'Join LinkQueue'}
+          </h1>
+          <p className="text-purple-200">
+            {isLogin ? 'Sign in to manage your links' : 'Create your account and start sharing'}
+          </p>
+        </div>
 
     const handleChange = (e) => {
         setFormData({
