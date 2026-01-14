@@ -30,12 +30,35 @@ export default function DashboardPage() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-fuchsia-500 flex items-center justify-center font-bold text-white shadow-lg shadow-purple-500/50 group-hover:scale-110 transition-transform">
               LQ
             </div>
-        );
-    }
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
+              LinkQueue
+            </span>
+          </a>
+          <div className="flex items-center gap-4">
+            <div className="text-sm text-purple-200">
+              Welcome, <span className="text-white font-semibold">{session.user.name || session.user.email}</span>
+            </div>
+            <button
+              onClick={handleSignOut}
+              className="px-6 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-white font-medium transition-all hover:scale-105 active:scale-95"
+            >
+              Sign Out
+            </button>
+          </div>
+        </div>
+      </nav>
 
-    if (!session) {
-        return null;
-    }
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+        {/* Header */}
+        <div className="mb-12">
+          <h1 className="text-5xl md:text-6xl font-black mb-4 text-white">
+            Your <span className="bg-gradient-to-r from-purple-400 to-fuchsia-400 bg-clip-text text-transparent">Dashboard</span>
+          </h1>
+          <p className="text-xl text-purple-200">
+            Manage your links, track analytics, and grow your audience
+          </p>
+        </div>
 
     return (
         <div className="gradient-bg min-h-screen">
