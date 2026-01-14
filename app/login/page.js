@@ -63,70 +63,55 @@ export default function LoginPage() {
           </p>
         </div>
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-        setError('');
-    };
+        {/* Main Card */}
+        <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8">
+          {/* Error Message */}
+          {error && (
+            <div className="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded-xl text-red-200 text-sm flex items-start gap-3">
+              <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+              </svg>
+              <span>{error}</span>
+            </div>
+          )}
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setError('');
-        setIsLoading(true);
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="space-y-5">
+            {/* Name Field (Sign Up Only) */}
+            {!isLogin && (
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-purple-100 mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required={!isLogin}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-purple-300/50 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+            )}
 
-        try {
-            if (isLogin) {
-
-                const result = await signIn('credentials', {
-                    redirect: false,
-                    email: formData.email,
-                    password: formData.password,
-                });
-
-                if (result?.error) {
-                    setError(result.error);
-                } else {
-                    router.push('/dashboard');
-                    router.refresh();
-                }
-            } else {
-
-                const response = await fetch('/api/auth/register', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
-                });
-
-                const data = await response.json();
-
-                if (!response.ok) {
-                    setError(data.error || 'Something went wrong');
-                } else {
-
-                    const result = await signIn('credentials', {
-                        redirect: false,
-                        email: formData.email,
-                        password: formData.password,
-                    });
-
-                    if (result?.error) {
-                        setError(result.error);
-                    } else {
-                        router.push('/dashboard');
-                        router.refresh();
-                    }
-                }
-            }
-        } catch (err) {
-            setError('An unexpected error occurred. Please try again.');
-        } finally {
-            setIsLoading(false);
-        }
-    };
+            {/* Email Field */}
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-purple-100 mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-purple-300/50 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                placeholder="you@example.com"
+              />
+            </div>
 
     return (
         <div className="auth-gradient-bg min-h-screen flex items-center justify-center px-6 py-12">
