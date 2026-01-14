@@ -234,8 +234,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {features.map((feature, idx) => (
-              <div key={idx} className="modern-card reveal" style={{ transitionDelay: `${idx * 100}ms` }}>
-                <div className="icon-box">
+              <div key={idx} className="bg-white rounded-3xl shadow-xl border border-gray-200 p-10 hover:shadow-2xl hover:scale-105 transition-all reveal" style={{ transitionDelay: `${idx * 100}ms` }}>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-3xl mb-6 shadow-lg shadow-blue-500/30">
                   {feature.icon}
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
@@ -246,11 +246,11 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* CTA Section */}
       <section className="py-32 px-6">
         <div className="max-w-5xl mx-auto reveal">
-          <div className="modern-card text-center bg-gradient-to-br from-blue-50 via-white to-blue-50/20 border-blue-100 py-24 px-10">
-            <h2 className="text-6xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl shadow-2xl text-center py-24 px-10 border border-blue-500">
+            <h2 className="text-6xl md:text-7xl font-bold mb-8 text-white leading-tight max-w-4xl mx-auto">
               Ready to start?
             </h2>
             <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
