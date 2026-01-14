@@ -72,7 +72,10 @@ export default function DashboardPage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
                   0
                 </div>
-            </nav>
+                <div className="text-purple-200 font-medium">Total Links</div>
+              </div>
+            </div>
+          </div>
 
            
             <div className="max-w-7xl mx-auto px-6 py-12">
