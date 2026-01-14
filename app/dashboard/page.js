@@ -136,26 +136,25 @@ export default function DashboardPage() {
               <p className="text-purple-200">Download your profile QR code</p>
             </button>
 
-                        <button className="glass-card p-6 text-left hover:scale-105 transition-transform">
-                            <div className="text-3xl mb-3">📊</div>
-                            <h3 className="text-xl font-bold mb-2">View Analytics</h3>
-                            <p className="text-gray-400">Check your detailed statistics</p>
-                        </button>
-                    </div>
-                </div>
+            {/* View Analytics */}
+            <button className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-6 text-left hover:bg-white/10 hover:scale-105 hover:shadow-xl transition-all group">
+              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">📊</div>
+              <h3 className="text-xl font-bold mb-2 text-white">View Analytics</h3>
+              <p className="text-purple-200">Check your detailed statistics</p>
+            </button>
+          </div>
+        </div>
 
-              
-                <div className="mt-12 glass-card p-12 text-center">
-                    <div className="text-6xl mb-4">🚀</div>
-                    <h3 className="text-2xl font-bold mb-3">Ready to Get Started?</h3>
-                    <p className="text-gray-400 mb-6 max-w-md mx-auto">
-                        Create your first link and start sharing your content with the world!
-                    </p>
-                    <button className="btn-primary px-8 py-4">
-                        Create Your First Link
-                    </button>
-                </div>
-            </div>
+        {/* Call to Action */}
+        <div className="bg-gradient-to-br from-purple-500/20 to-fuchsia-500/20 backdrop-blur-xl rounded-3xl border border-white/20 p-12 text-center shadow-2xl">
+          <div className="text-7xl mb-6 animate-bounce">🚀</div>
+          <h3 className="text-3xl font-bold mb-4 text-white">Ready to Get Started?</h3>
+          <p className="text-purple-200 mb-8 max-w-md mx-auto text-lg">
+            Create your first link and start sharing your content with the world!
+          </p>
+          <button className="px-10 py-4 bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white font-bold rounded-xl shadow-xl shadow-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/60 hover:scale-110 active:scale-95 transition-all text-lg">
+            Create Your First Link
+          </button>
         </div>
     );
 }
