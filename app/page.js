@@ -253,18 +253,18 @@ export default function Home() {
             <h2 className="text-6xl md:text-7xl font-bold mb-8 text-white leading-tight max-w-4xl mx-auto">
               Ready to start?
             </h2>
-            <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
               Join thousands of creators. Free forever, no credit card required.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center max-w-2xl mx-auto">
-              <button className="btn-primary text-xl px-14 py-6 w-full sm:w-auto">
+              <button className="text-xl px-14 py-6 w-full sm:w-auto bg-white text-blue-600 font-bold rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all">
                 Create Your Page
               </button>
-              <button className="btn-secondary text-xl px-14 py-6 w-full sm:w-auto">
+              <button className="text-xl px-14 py-6 w-full sm:w-auto bg-blue-500 text-white font-bold rounded-xl border-2 border-blue-400 hover:bg-blue-400 hover:scale-105 active:scale-95 transition-all">
                 View Demo
               </button>
             </div>
-            <div className="flex items-center justify-center gap-8 text-sm font-semibold text-gray-500 mt-10">
+            <div className="flex items-center justify-center gap-8 text-sm font-semibold text-blue-100 mt-10">
               <span className="flex items-center gap-2">✓ Free forever</span>
               <span className="flex items-center gap-2">✓ No credit card</span>
               <span className="flex items-center gap-2">✓ 2 min setup</span>
