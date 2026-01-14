@@ -113,131 +113,25 @@ export default function LoginPage() {
               />
             </div>
 
-    return (
-        <div className="auth-gradient-bg min-h-screen flex items-center justify-center px-6 py-12">
-            {/* Animated Floating Orbs */}
-            <div className="auth-orb auth-orb-1"></div>
-            <div className="auth-orb auth-orb-2"></div>
-            <div className="auth-orb auth-orb-3"></div>
-
-            {/* Back to Home Link */}
-            <Link
-                href="/"
-                className="auth-back-link fixed top-8 left-8 z-50"
-            >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-                <span>Back to Home</span>
-            </Link>
-
-            <div className="w-full max-w-md relative z-10">
-                {/* Logo and Title Section */}
-                <div className="text-center mb-10">
-                    <div className="flex items-center justify-center mb-6">
-                        <div className="auth-logo">
-                            LQ
-                        </div>
-                    </div>
-                    <h1 className="auth-title mb-3">
-                        {isLogin ? 'Welcome Back' : 'Join LinkQueue'}
-                    </h1>
-                    <p className="auth-subtitle">
-                        {isLogin
-                            ? 'Sign in to manage your links'
-                            : 'Create your account and start sharing'
-                        }
-                    </p>
-                </div>
-
-                {/* Main Card */}
-                <div className="glass-card p-8 md:p-10">
-                    {/* Error Message */}
-                    {error && (
-                        <div className="auth-error mb-6">
-                            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span>{error}</span>
-                        </div>
-                    )}
-
-                    {/* Form */}
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        {/* Name Field (Sign Up Only) */}
-                        {!isLogin && (
-                            <div className="fade-in">
-                                <label htmlFor="name" className="auth-label">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required={!isLogin}
-                                    className="auth-input"
-                                    placeholder="John Doe"
-                                />
-                            </div>
-                        )}
-
-                        {/* Email Field */}
-                        <div>
-                            <label htmlFor="email" className="auth-label">
-                                Email Address
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                                className="auth-input"
-                                placeholder="you@example.com"
-                            />
-                        </div>
-
-                        {/* Password Field */}
-                        <div>
-                            <label htmlFor="password" className="auth-label">
-                                Password
-                            </label>
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                value={formData.password}
-                                onChange={handleChange}
-                                required
-                                minLength={6}
-                                className="auth-input"
-                                placeholder="••••••••"
-                            />
-                            {!isLogin && (
-                                <p className="auth-helper-text">
-                                    Must be at least 6 characters long
-                                </p>
-                            )}
-                        </div>
-
-                        {/* Remember Me & Forgot Password (Login Only) */}
-                        {isLogin && (
-                            <div className="flex items-center justify-between">
-                                <label className="flex items-center gap-3 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        className="auth-checkbox"
-                                    />
-                                    <span className="text-sm" style={{ color: 'hsla(0, 0%, 100%, 0.7)' }}>Remember me</span>
-                                </label>
-                                <a href="#" className="auth-link text-sm">
-                                    Forgot password?
-                                </a>
-                            </div>
-                        )}
+            {/* Password Field */}
+            <div>
+              <label htmlFor="password" className="block text-sm font-medium text-purple-100 mb-2">
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-purple-300/50 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                placeholder="••••••••"
+              />
+              {!isLogin && (
+                <p className="mt-2 text-xs text-purple-200/70">Must be at least 6 characters long</p>
+              )}
+            </div>
 
                         {/* Submit Button */}
                         <button
