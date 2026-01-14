@@ -60,28 +60,17 @@ export default function DashboardPage() {
           </p>
         </div>
 
-    return (
-        <div className="gradient-bg min-h-screen">
-           
-            <nav className="backdrop-blur-md bg-opacity-80 border-b border-gray-800">
-                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-2">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center font-bold text-white pulse-glow">
-                            LQ
-                        </div>
-                        <span className="text-2xl font-bold gradient-text">LinkQueue</span>
-                    </Link>
-                    <div className="flex items-center gap-4">
-                        <div className="text-sm text-gray-400">
-                            Welcome, <span className="text-white font-semibold">{session.user.name || session.user.email}</span>
-                        </div>
-                        <button
-                            onClick={() => signOut({ callbackUrl: '/' })}
-                            className="btn-secondary px-6 py-2"
-                        >
-                            Sign Out
-                        </button>
-                    </div>
+        {/* Stats Cards */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {/* Total Links */}
+          <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-6 hover:bg-white/15 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500/30 to-purple-600/30 flex items-center justify-center text-3xl backdrop-blur-sm border border-purple-400/30">
+                🔗
+              </div>
+              <div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
+                  0
                 </div>
             </nav>
 
