@@ -273,13 +273,13 @@ export default function Home() {
         </div>
       </section>
 
-    
+      {/* Footer */}
       <footer className="py-20 px-6 border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/30">
                   LQ
                 </div>
                 <span className="text-xl font-bold text-gray-900">LinkQueue</span>
