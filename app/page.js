@@ -30,11 +30,6 @@ export default function Home() {
 
   const features = [
     {
-      icon: '🎨',
-      title: 'Beautiful Design',
-      description: 'Professional themes that make you look good. Minimalist and modern.'
-    },
-    {
       icon: '📊',
       title: 'Analytics',
       description: 'Track your clicks and engagement with simple, clear insights.'
