@@ -30,11 +30,7 @@ export default function Home() {
 
   const features = [
   
-    {
-      icon: '✨',
-      title: 'Fresh Updates',
-      description: 'Regular improvements and new features based on user feedback.'
-    },
+   
   ];
 
   const stats = [
