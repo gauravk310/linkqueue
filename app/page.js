@@ -30,11 +30,6 @@ export default function Home() {
 
   const features = [
     {
-      icon: '⚡',
-      title: 'Fast & Simple',
-      description: 'Get your page up and running in minutes. Clean interface, zero complexity.'
-    },
-    {
       icon: '🎨',
       title: 'Beautiful Design',
       description: 'Professional themes that make you look good. Minimalist and modern.'
