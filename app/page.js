@@ -30,12 +30,7 @@ export default function Home() {
 
   const features = [
     {
-      icon: '📊',
-      title: 'Analytics',
-      description: 'Track your clicks and engagement with simple, clear insights.'
-    },
-    {
-      icon: '📱',
+      icon: '',
       title: 'QR Codes',
       description: 'Auto-generated QR codes for every link. Perfect for offline sharing.'
     },
