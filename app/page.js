@@ -28,10 +28,6 @@ export default function Home() {
   }, []);
 
 
-  const features = [
-  
-   
-  ];
 
   const stats = [
     { value: '50K+', label: 'Active Users' },
