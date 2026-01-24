@@ -28,7 +28,6 @@ export default function Home() {
   }, []);
 
   const demoLinks = [
-    { id: 2, title: 'Instagram', url: 'instagram.com/alex', icon: '📸' },
   ];
 
   const features = [
