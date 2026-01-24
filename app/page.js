@@ -29,12 +29,7 @@ export default function Home() {
 
 
   const features = [
-    
-    {
-      icon: '🔒',
-      title: 'Reliable',
-      description: 'Your links work 24/7. We handle the tech so you can focus on content.'
-    },
+  
     {
       icon: '✨',
       title: 'Fresh Updates',
