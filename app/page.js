@@ -28,7 +28,6 @@ export default function Home() {
   }, []);
 
   const demoLinks = [
-    { id: 1, title: 'Portfolio', url: 'behance.net/alex', icon: '💼' },
     { id: 2, title: 'Instagram', url: 'instagram.com/alex', icon: '📸' },
     { id: 3, title: 'GitHub', url: 'github.com/alex', icon: '⚡' },
     { id: 4, title: 'Shop', url: 'shop.alex.com', icon: '🛍️' },
