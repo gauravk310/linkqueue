@@ -29,11 +29,7 @@ export default function Home() {
 
 
   const features = [
-    {
-      icon: '',
-      title: 'QR Codes',
-      description: 'Auto-generated QR codes for every link. Perfect for offline sharing.'
-    },
+    
     {
       icon: '🔒',
       title: 'Reliable',
