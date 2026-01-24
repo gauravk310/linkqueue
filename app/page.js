@@ -30,7 +30,6 @@ export default function Home() {
 
 
   const stats = [
-    { value: '2M+', label: 'Links Shared' },
   ];
 
   return (
