@@ -31,7 +31,6 @@ export default function Home() {
 
   const stats = [
     { value: '2M+', label: 'Links Shared' },
-    { value: '99.9%', label: 'Uptime' },
   ];
 
   return (
