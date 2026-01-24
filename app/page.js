@@ -27,8 +27,6 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const demoLinks = [
-  ];
 
   const features = [
     {
