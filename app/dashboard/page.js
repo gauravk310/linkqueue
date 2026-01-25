@@ -86,7 +86,6 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Click Rate */}
           <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-6 hover:bg-white/15 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/30 to-pink-600/30 flex items-center justify-center text-3xl backdrop-blur-sm border border-pink-400/30">
