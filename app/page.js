@@ -220,7 +220,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-20 px-6 border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
