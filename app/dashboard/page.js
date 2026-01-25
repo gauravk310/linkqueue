@@ -101,7 +101,6 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Quick Actions */}
         <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <span className="text-2xl">⚡</span>
