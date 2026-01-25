@@ -60,7 +60,6 @@ export default function Home() {
         }
       `}</style>
 
-      {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/80 border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
