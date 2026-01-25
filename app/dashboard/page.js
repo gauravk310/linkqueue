@@ -48,7 +48,6 @@ export default function DashboardPage() {
 
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        {/* Header */}
         <div className="mb-12">
           <h1 className="text-5xl md:text-6xl font-black mb-4 text-white">
             Your <span className="bg-gradient-to-r from-purple-400 to-fuchsia-400 bg-clip-text text-transparent">Dashboard</span>
