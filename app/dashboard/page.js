@@ -46,7 +46,7 @@ export default function DashboardPage() {
         </div>
       </nav>
 
-      {/* Main Content */}
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
         {/* Header */}
         <div className="mb-12">
