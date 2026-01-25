@@ -133,7 +133,6 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Call to Action */}
         <div className="bg-gradient-to-br from-purple-500/20 to-fuchsia-500/20 backdrop-blur-xl rounded-3xl border border-white/20 p-12 text-center shadow-2xl">
           <div className="text-7xl mb-6 animate-bounce">🚀</div>
           <h3 className="text-3xl font-bold mb-4 text-white">Ready to Get Started?</h3>
