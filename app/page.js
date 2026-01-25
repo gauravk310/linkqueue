@@ -122,7 +122,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Demo Card */}
             <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
               <div className="bg-white rounded-3xl shadow-2xl border border-gray-200 p-10 max-w-xl mx-auto lg:mx-0 hover:shadow-3xl transition-shadow">
                 {/* Profile Header */}
