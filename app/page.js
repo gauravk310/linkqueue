@@ -134,7 +134,6 @@ export default function Home() {
                   <p className="text-gray-600 font-semibold text-lg">Designer & Developer</p>
                 </div>
 
-                {/* Links */}
                 <div className="space-y-4">
                   {demoLinks.map((link) => (
                     <div key={link.id} className="flex items-center gap-5 p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-blue-50 hover:border-blue-200 hover:shadow-lg hover:scale-105 transition-all cursor-pointer group">
