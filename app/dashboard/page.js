@@ -119,7 +119,6 @@ export default function DashboardPage() {
               <p className="text-purple-200">Choose from 50+ beautiful themes</p>
             </button>
 
-            {/* Get QR Code */}
             <button className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-6 text-left hover:bg-white/10 hover:scale-105 hover:shadow-xl transition-all group">
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">📱</div>
               <h3 className="text-xl font-bold mb-2 text-white">Get QR Code</h3>
