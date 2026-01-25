@@ -156,7 +156,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-24 px-6 bg-white border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-24">
