@@ -72,7 +72,6 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Total Views */}
           <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-6 hover:bg-white/15 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/30 to-cyan-600/30 flex items-center justify-center text-3xl backdrop-blur-sm border border-cyan-400/30">
