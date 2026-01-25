@@ -194,7 +194,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-32 px-6">
         <div className="max-w-5xl mx-auto reveal">
           <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl shadow-2xl text-center py-24 px-10 border border-blue-500">
