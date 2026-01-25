@@ -22,7 +22,6 @@ export default function DashboardPage() {
         <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}}></div>
       </div>
 
-      {/* Navigation Bar */}
       <nav className="relative z-10 backdrop-blur-xl bg-white/5 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-3 group">
