@@ -45,7 +45,6 @@ export default function LoginPage() {
         Back to Home
       </a>
 
-      {/* Main Container */}
       <div className="relative w-full max-w-md z-10">
         {/* Logo and Title */}
         <div className="text-center mb-8">
