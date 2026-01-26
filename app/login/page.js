@@ -69,7 +69,6 @@ export default function LoginPage() {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Name Field (Sign Up Only) */}
             {!isLogin && (
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-purple-100 mb-2">
