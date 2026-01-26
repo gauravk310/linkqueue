@@ -87,7 +87,6 @@ export default function LoginPage() {
               </div>
             )}
 
-            {/* Email Field */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-purple-100 mb-2">
                 Email Address
