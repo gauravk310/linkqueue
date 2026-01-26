@@ -183,7 +183,6 @@ export default function LoginPage() {
             </button>
           </div>
 
-          {/* Switch Login/Signup */}
           <div className="mt-6 text-center text-sm">
             <span className="text-purple-200">
               {isLogin ? "Don't have an account? " : 'Already have an account? '}
