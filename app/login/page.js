@@ -159,7 +159,6 @@ export default function LoginPage() {
             <div className="flex-1 h-px bg-white/20"></div>
           </div>
 
-          {/* Social Login Buttons */}
           <div className="grid grid-cols-2 gap-3">
             <button
               type="button"
