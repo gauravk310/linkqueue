@@ -201,7 +201,6 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Security Badge */}
         <div className="mt-6 text-center">
           <div className="inline-flex items-center gap-2 text-purple-200/80 text-sm">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
