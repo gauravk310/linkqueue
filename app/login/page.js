@@ -68,7 +68,6 @@ export default function LoginPage() {
             </div>
           )}
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Name Field (Sign Up Only) */}
             {!isLogin && (
