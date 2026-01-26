@@ -24,7 +24,6 @@ export default function LoginPage() {
     setError('');
     setIsLoading(true);
     
-    // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
       alert(isLogin ? 'Login successful!' : 'Account created!');
