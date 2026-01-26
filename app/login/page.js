@@ -38,7 +38,6 @@ export default function LoginPage() {
         <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Back to Home Link */}
       <a href="/" className="absolute top-6 left-6 text-white/80 hover:text-white transition-colors flex items-center gap-2 group">
         <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
