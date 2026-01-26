@@ -153,7 +153,6 @@ export default function LoginPage() {
             </button>
           </form>
 
-          {/* Divider */}
           <div className="flex items-center gap-4 my-6">
             <div className="flex-1 h-px bg-white/20"></div>
             <span className="text-sm text-purple-200">Or</span>
