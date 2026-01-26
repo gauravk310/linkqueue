@@ -46,7 +46,6 @@ export default function LoginPage() {
       </a>
 
       <div className="relative w-full max-w-md z-10">
-        {/* Logo and Title */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-fuchsia-500 rounded-2xl mb-4 shadow-2xl shadow-purple-500/50 transform hover:scale-110 transition-transform">
             <span className="text-2xl font-bold text-white">LQ</span>
