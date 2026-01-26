@@ -134,7 +134,6 @@ export default function LoginPage() {
               </div>
             )}
 
-            {/* Submit Button */}
             <button
               type="submit"
               disabled={isLoading}
