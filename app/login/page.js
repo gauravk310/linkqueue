@@ -58,7 +58,6 @@ export default function LoginPage() {
           </p>
         </div>
 
-        {/* Main Card */}
         <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8">
           {/* Error Message */}
           {error && (
