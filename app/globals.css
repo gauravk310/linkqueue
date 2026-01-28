@@ -654,7 +654,6 @@ section {
   font-weight: 500;
 }
 
-/* Spinner Animation */
 .auth-spinner {
   animation: spin 1s linear infinite;
 }
