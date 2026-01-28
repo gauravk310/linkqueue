@@ -634,7 +634,6 @@ section {
   border-color: hsl(280, 80%, 55%);
 }
 
-/* Auth Helper Text */
 .auth-helper-text {
   font-size: 0.8rem;
   color: hsla(0, 0%, 100%, 0.5);
