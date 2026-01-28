@@ -555,7 +555,6 @@ section {
   letter-spacing: 0.1em;
 }
 
-/* Auth Links */
 .auth-link {
   color: hsl(280, 80%, 70%);
   font-weight: 600;
