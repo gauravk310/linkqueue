@@ -605,7 +605,6 @@ section {
   transform: translateX(-4px);
 }
 
-/* Auth Error Message */
 .auth-error {
   padding: 14px 18px;
   border-radius: 12px;
