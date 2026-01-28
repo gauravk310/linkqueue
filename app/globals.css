@@ -688,7 +688,6 @@ section {
   font-weight: 400;
 }
 
-/* Responsive adjustments */
 @media (max-width: 640px) {
   .glass-card {
     border-radius: 20px;
